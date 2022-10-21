@@ -1,0 +1,9 @@
+-- FORMAT SPECIFIERS --
+
+%d | int (%d is ALWAYS base 10)
+%f | float
+%d | double
+%s | string
+
+
+
