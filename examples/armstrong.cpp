@@ -1,6 +1,8 @@
 # include <stdio.h>
 # include <math.h>
 
+
+
 int countdig(int x) {
     int count = 0;
 
@@ -17,7 +19,11 @@ int countdig(int x) {
 
 
 int main () {
-    int x;
+    int  x;
+    char n_red[] = "\033[0;91m";
+    char n_gre[] = "\033[0;92m";
+    char n_mag[] = "\033[0;95m";
+    char res[]   = "\033[0m";
 
     // Gets the number
     printf("Enter a number: ");
@@ -32,7 +38,11 @@ int main () {
         dig_c    -= 1;
     }
 
-    printf("\nsum of cubes is %d", sum);
+    // Prints out the result
+    printf("\n%s%d%s ", n_mag, x, res);
+    if (sum == x)    { printf("%sis%s ",     n_gre, res); }
+    else             { printf("%sis not%s ", n_red, res); }
+    printf("an armstrong number");
 
     printf("\n");
 }
