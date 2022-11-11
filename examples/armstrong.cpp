@@ -1,18 +1,28 @@
+# include <string.h>
 # include <stdio.h>
 # include <math.h>
 
 
 
-int countdig(int x) {
-    int count = 0;
+bool is_arm(int x) {
+    int  sum = 0;
+    int  i;
+    int  dig;
+    int  x_len;
+    char x_str[10] = "";
 
-    // Loops until its 0
-    while (x > 0) {
-        x     =  x/10;
-        count += 1;
+    sprintf(x_str, "%d", x);
+    x_len = strlen(x_str);
+
+
+    for(i=0; i < x_len; i++) {
+        char ch = x_str[i];
+        dig  = (int)x_str[i];
+        dig -= 48; // cz ASCII
+        sum += pow(dig, 3);
     }
 
-    return count;
+    return x == sum;
 }
 
 
@@ -23,25 +33,17 @@ int main () {
     char n_red[] = "\033[0;91m";
     char n_gre[] = "\033[0;92m";
     char n_mag[] = "\033[0;95m";
+    char n_cya[] = "\033[0;96m";
     char res[]   = "\033[0m";
 
     // Gets the number
-    printf("Enter a number: ");
+    printf("%sEnter a number%s: ", n_cya, res);
     scanf("%d", &x);
-
-    int dig_c = countdig(x);
-    int sum   = 0;
-
-    while (dig_c > 0) {
-        int dig  = (int)(x / pow(10,dig_c-1)) % 10;
-        sum      += pow(dig, 3);
-        dig_c    -= 1;
-    }
 
     // Prints out the result
     printf("\n%s%d%s ", n_mag, x, res);
-    if (sum == x)    { printf("%sis%s ",     n_gre, res); }
-    else             { printf("%sis not%s ", n_red, res); }
+    if (is_arm(x))    printf("%sis%s ",     n_gre, res);
+    else              printf("%sis not%s ", n_red, res);
     printf("an armstrong number");
 
     printf("\n");

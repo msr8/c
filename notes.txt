@@ -1,9 +1,73 @@
 -- FORMAT SPECIFIERS --
 
-%d | int (%d is ALWAYS base 10)
-%f | float
-%d | double
-%s | string
+%d  | int    (%d is ALWAYS base 10)
+%u  | unsigned int
+%f  | float  (stores 7  decimal digits)
+%lf | double (stores 15 decimal digits)
+%LF | long double
+%s  | string
+%c  | char
+%o  | octal
+%x  | hexadecimal
+%lu | unsigned long (returned by sizeof())
+%p  | pointer (used in like, `printf("%p",&x)`), here & is necessary
+
+-> You can do something like %03d, so that the integer printed will be of 3 digits. The left is padded with 0s
+-> You can do something like %.3f, so that only 3 digits will be printed after the .
 
 
 
+-- LOGICAL OPERATORS --
+&& | and
+|| | or
+
+
+
+-- KEYWORDS --
+
+break     | same as python
+continue  | same as python
+sizeof(x) | returns the amount of storage occupied by `x` (in bytes)
+
+
+
+-- FOR STATEMENT --
+for (statement, condition, operation) {}
+
+statement is the statement that is executed once when the loop is started, ie an assignment operation
+condition is the condition which decides if the code block will run. If it returns true, the code block will be ran
+operation is the operation done on the value assigned in `statement` to make sure that `condition` returns true when needed to. It is executed after the code block has been ran
+
+for (int i = 0; i <= 5; i++) {
+    printf("%d ", i);
+}
+
+OUTPUT: 0 1 2 3 4 5
+
+ITS THE SAME AS
+
+int i = 0;
+while (i<=5) {
+    printf("%d ", i);
+    i++;
+}
+
+
+
+-- LOOPING THRO AN ARRAY --
+
+int array[] = {1, 2, 3, 4, 5};
+int size    = (int)( sizeof(array) / sizeof(array[0]) );
+for (int i = 0; i < size; i++) {
+    printf("%d ", array[i]);
+}
+
+
+
+-- CONVERTING INT TO CHAR[] --
+
+char x[100] = "";
+sprintf(x, "%d", 11);
+printf("This is x: %s", x);
+
+OUPUT: This is x: 11

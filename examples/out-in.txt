@@ -1,0 +1,12 @@
+
+Profiles on interface Wi-Fi:
+
+Group policy profiles (read only)
+---------------------------------
+    <None>
+
+User profiles
+-------------
+    All User Profile     : R K_5G
+    All User Profile     : R K
+
