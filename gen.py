@@ -1,3 +1,5 @@
+import os
+
 def color_gen():
     """
     It generates a C program that prints out all the possible combinations of colors and styles
@@ -79,4 +81,50 @@ def magic_gen():
 
 
 
-magic_gen()
+
+
+
+def c_webpage_gen():
+    inp_dir = '/Users/mark/school/qs'
+    out_fp  = '/Users/mark/school/docs/c/README.md'
+    data    = {}
+    keys    = []
+
+    for fn in os.listdir(inp_dir):
+        if fn.startswith('.'):         continue
+        if not fn.endswith('.cpp'):    continue
+
+        key = fn.strip('.cpp')
+        key = int(key)
+        keys.append(key)
+    
+    keys.sort()
+
+    for key in keys:
+        dic = {}
+        fp  = os.path.join(inp_dir, f'{key}.cpp')
+        with open(fp) as f:    file_data = f.read()
+        lines = file_data.split('\n')
+        dic['q'] = lines[0].strip('//').strip(' ')
+        dic['a'] = '\n'.join(lines[1:]).strip('\n')
+
+        data[key] = dic
+    
+    to_write = ''
+
+    for key in data:
+        dic       = data[key]
+        to_write += f'**Q{key}) {dic["q"]}**\n\n```c\n{dic["a"]}\n```\n<br><br>\n\n'
+    
+    with open(out_fp, 'w') as f:
+        f.write(to_write)
+
+
+
+
+
+
+c_webpage_gen()
+
+
+
