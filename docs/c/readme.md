@@ -141,7 +141,7 @@ int main() {
     int a = 70;
     int b = 45;
     int c = 180-a-b;
-    printf("\n\n_3(): Assuming that the two angles are %ddegrees and %ddegrees, the third angle is %ddegrees", a, b, c);
+    printf("\n\nAssuming that the two angles are %ddegrees and %ddegrees, the third angle is %ddegrees", a, b, c);
 
     printf("\n");
 }
@@ -161,7 +161,7 @@ int main() {
     int a_r, b_r;
     a_r = ( -b + sqrt((b*b)-(4*a*c)) ) / (2*a);
     b_r = ( -b - sqrt((b*b)-(4*a*c)) ) / (2*a);
-    printf("\n\n_4(): The solutions for the equation %dx^2 + %dx + %d are %d & %d\n", a, b, c, a_r, b_r);
+    printf("The solutions for the equation %dx^2 + %dx + %d are %d & %d\n", a, b, c, a_r, b_r);
 
     printf("\n");
 }
@@ -179,7 +179,7 @@ int main() {
     int r = 10;
     int t = 2;
     int ci =  ( p * pow(1+(r/100.0) , t) ) - p;
-    printf("\n_5(): Given that the principle is %d, rate is %d%% over %dyrs, the CI is %d\n", p,r,t,ci);
+    printf("Given that the principle is %d, rate is %d%% over %dyrs, the CI is %d\n", p,r,t,ci);
 
     printf("\n");
 }
@@ -195,12 +195,12 @@ int main() {
     int  yr;
     bool is_leap;
 
-    printf("\n_1(): Enter the year: ");
+    printf("Enter the year: ");
     scanf("%d", &yr);
     
     is_leap = ( (yr%4==0) && (yr%100!=0) ) || (yr%400==0); 
 
-    printf("_1(): %d is ", yr);
+    printf("%d is ", yr);
     if (!is_leap)    {printf("not ");}
     printf("leap year");
 
@@ -218,12 +218,12 @@ int main() {
     int  x;
     bool is_even;
 
-    printf("\n\n_2(): Enter a number: ");
+    printf("\n\nEnter a number: ");
     scanf("%d", &x);
 
     is_even = x%2 == 0;
 
-    printf("_2(): %d is ", x);
+    printf("%d is ", x);
     is_even ? printf("an") : printf("not a");
     printf(" even number");
 
@@ -242,13 +242,13 @@ int main() {
     int  x_int;
     bool is_cap;
 
-    printf("\n\n_3(): Enter a character: ");
+    printf("\n\nEnter a character: ");
     scanf("%c", &x);
 
     x_int  = x;
     is_cap = x_int>=65 && x_int<=90;
 
-    printf("_3(): %c is", x);
+    printf("%c is", x);
     is_cap ? printf("") : printf(" not");
     printf(" a capital character");
 
@@ -267,13 +267,13 @@ int main() {
     int  x_int;
     bool is_dig;
 
-    printf("\n\n_4(): Enter a character: ");
+    printf("\n\nEnter a character: ");
     scanf("%c", &x);
 
-    x_int   = x;
+    x_int  = x;
     is_dig = x_int>=48 && x_int<=57;
 
-    printf("_4(): %c is", x);
+    printf("%c is", x);
     is_dig ? printf("") : printf(" not");
     printf(" a digit");
 
@@ -294,7 +294,7 @@ int main() {
 
     grt = (a>b) ? a : b;
 
-    printf("\n\n_5(): The greatest number among %d and %d is %d", a, b, grt);
+    printf("\n\nThe greatest number among %d and %d is %d", a, b, grt);
 
     printf("\n");
 }
@@ -317,7 +317,7 @@ int main() {
     sum     = x + y;
     is_even = sum%2==0;
 
-    printf("\n\n_6(): The sum of the last two digits of %d is ", x);
+    printf("\n\nThe sum of the last two digits of %d is ", x);
     is_even ? printf("even") : printf("odd");
 
     printf("\n");

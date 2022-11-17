@@ -6,13 +6,13 @@ int main() {
     int  x_int;
     bool is_dig;
 
-    printf("\n\n_4(): Enter a character: ");
+    printf("\n\nEnter a character: ");
     scanf("%c", &x);
 
-    x_int   = x;
+    x_int  = x;
     is_dig = x_int>=48 && x_int<=57;
 
-    printf("_4(): %c is", x);
+    printf("%c is", x);
     is_dig ? printf("") : printf(" not");
     printf(" a digit");
 

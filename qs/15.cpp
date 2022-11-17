@@ -8,7 +8,7 @@ int main() {
 
     grt = (a>b) ? a : b;
 
-    printf("\n\n_5(): The greatest number among %d and %d is %d", a, b, grt);
+    printf("\n\nThe greatest number among %d and %d is %d", a, b, grt);
 
     printf("\n");
 }

@@ -12,7 +12,7 @@ int main() {
     sum     = x + y;
     is_even = sum%2==0;
 
-    printf("\n\n_6(): The sum of the last two digits of %d is ", x);
+    printf("\n\nThe sum of the last two digits of %d is ", x);
     is_even ? printf("even") : printf("odd");
 
     printf("\n");
