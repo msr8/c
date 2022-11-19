@@ -308,6 +308,35 @@ int main() {
 ```
 <br><br>
 
+**Q16) WAP to accept a 4 digit number and display the product of digits placed at even places and do the same with digits placed at odd places**
+
+```c
+# include <stdio.h>
+
+int cint(char c) {
+    return (int)c - 48;
+}
+
+int main() {
+    int  x;
+    int  odd_prod;
+    int  even_prod;
+    char x_str[5];
+
+    printf("Enter a 4 digit number: ");
+    scanf("%4d", &x);
+
+    sprintf(x_str, "%d", x);
+    even_prod = cint(x_str[0]) * cint(x_str[2]);
+    odd_prod  = cint(x_str[1]) * cint(x_str[3]);
+
+    printf("For a number %d, the product of digits placed at odd places is %d and the product of digits placed at even places is %d", x, odd_prod, even_prod);
+
+    printf("\n");
+}
+```
+<br><br>
+
 **Q17) WAP to accept in in smallcase, convert it to uppercase, and display the ASCII values of both the cases**
 
 ```c
@@ -570,27 +599,27 @@ int main() {
 ```
 <br><br>
 
-**Q99) WAP to accept a 4 digit number and display the product of digits placed at even places and do the same with digits placed at odd places**
+**Q29) WAP to input 4 values of a,b,c,d and evaluate the ratio of a+b and c-d and print the result if c-d does not equal to 0**
 
 ```c
 # include <stdio.h>
-# include <string.h>
 
 int main() {
-    int  x;
-    int  i;
-    int  dig;
-    int  prod=1;
-    char x_str[5];
+    int   a, b, c, d;
+    int   a_b;
+    int   c_d;
+    float res;
 
-    printf("Enter a 3 digit number: ");
-    scanf("%3d", &x);
+    printf("Enter 4 numbers: ");
+    scanf("%d%d%d%d", &a, &b, &c, &d);
 
-    sprintf(x_str, "%d", x);
-    for (i=0; i<strlen(x_str); i++) {
-        dig  = (int)x_str[i];
-        dig -= 48;
+    a_b = a+b;
+    c_d = c-d;
+    if (c_d != 0) {
+        res  = (float) a_b/c_d;
+        printf("The ratio of %d+%d and %d-%d is %.2f", a, b, c, d, res);
     }
+
 
     printf("\n");
 }

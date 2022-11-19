@@ -2,11 +2,9 @@
 #include <string.h>
 
 int main() {
-    char a = 'k';
-    char b = 'l';
-    int  c = a%b;
-
-    printf("%d", c);
+    int x = 811;
+    
+    printf("h%2d", x);
 
 
 

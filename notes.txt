@@ -12,8 +12,9 @@
 %lu | unsigned long (returned by sizeof())
 %p  | pointer (used in like, `printf("%p",&x)`), here & is necessary
 
--> You can do something like %03d, so that the integer printed will be of 3 digits. The left is padded with 0s
--> You can do something like %.3f, so that only 3 digits will be printed after the .
+-> You can do something like %3d,  so that the integer printed will be atleast of 3 digits. The left is padded with whitespaces
+-> You can do something like %03d, so that the integer printed will be atleast of 3 digits. The left is padded with 0s
+-> You can do something like %.3f, so that the float will be rounded off to only 3 digits after the .
 
 
 
@@ -66,7 +67,7 @@ for (int i = 0; i < size; i++) {
 
 -- CONVERTING INT TO CHAR[] --
 
-char x[100] = "";
+char x[10] = "";
 sprintf(x, "%d", 11);
 printf("This is x: %s", x);
 
