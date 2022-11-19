@@ -1,18 +1,15 @@
-// WAP to find if an year is a leap year
+// WAP to caclulate the roots of a quadratic equation
 # include <stdio.h>
+# include <cmath>
 
 int main() {
-    int  yr;
-    bool is_leap;
-
-    printf("Enter the year: ");
-    scanf("%d", &yr);
-    
-    is_leap = ( (yr%4==0) && (yr%100!=0) ) || (yr%400==0); 
-
-    printf("%d is ", yr);
-    if (!is_leap)    {printf("not ");}
-    printf("leap year");
+    int a = 1;
+    int b = 7;
+    int c = 12;
+    int a_r, b_r;
+    a_r = ( -b + sqrt((b*b)-(4*a*c)) ) / (2*a);
+    b_r = ( -b - sqrt((b*b)-(4*a*c)) ) / (2*a);
+    printf("The solutions for the equation %dx^2 + %dx + %d are %d & %d\n", a, b, c, a_r, b_r);
 
     printf("\n");
 }

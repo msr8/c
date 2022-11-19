@@ -1,15 +1,13 @@
-// WAP to caclulate the roots of a quadratic equation
+// WAP to swap two numbers using 2 variables
 # include <stdio.h>
-# include <cmath>
 
 int main() {
-    int a = 1;
+    int a = 5;
     int b = 7;
-    int c = 12;
-    int a_r, b_r;
-    a_r = ( -b + sqrt((b*b)-(4*a*c)) ) / (2*a);
-    b_r = ( -b - sqrt((b*b)-(4*a*c)) ) / (2*a);
-    printf("The solutions for the equation %dx^2 + %dx + %d are %d & %d\n", a, b, c, a_r, b_r);
+    a = a+b;
+    b = a-b;
+    a = a-b;
+    printf("\nA:%d, B:%d", a, b);
 
     printf("\n");
 }

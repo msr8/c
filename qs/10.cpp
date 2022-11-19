@@ -1,13 +1,11 @@
-// WAP to caclulate compound interest
+// WAP to caclulate the third angle of a triangle when two angles (in degrees) are given
 # include <stdio.h>
-# include <cmath>
 
 int main() {
-    int p = 1e3;
-    int r = 10;
-    int t = 2;
-    int ci =  ( p * pow(1+(r/100.0) , t) ) - p;
-    printf("Given that the principle is %d, rate is %d%% over %dyrs, the CI is %d\n", p,r,t,ci);
+    int a = 70;
+    int b = 45;
+    int c = 180-a-b;
+    printf("\n\nAssuming that the two angles are %ddegrees and %ddegrees, the third angle is %ddegrees", a, b, c);
 
     printf("\n");
 }

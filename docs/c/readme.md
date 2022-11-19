@@ -1,8 +1,7 @@
-**Q1) WAP to calculate SI, given principal = 10k, rate = 5%, time = 5yrs**
+<br><br>**Q1) WAP to calculate SI, given principal = 10k, rate = 5%, time = 5yrs**
 
 ```c
 # include <stdio.h>
-
 
 int main() {
     float prin = 1e4;
@@ -22,7 +21,6 @@ int main() {
 ```c
 # include <stdio.h>
 
-
 int main() {
     int a   = 5;
     int a_2 = a*a;
@@ -41,7 +39,49 @@ int main() {
 ```
 <br><br>
 
-**Q3) WAP to Convert Cº to Fº**
+**Q3) WAP to take mins as input and display total number of hours and minutes**
+
+```c
+# include <stdio.h>
+
+int main() {
+    int x, mins, hrs;
+
+    printf("Enter the total number of minutes: ");
+    scanf("%d", &x);
+
+    hrs  = x / 60;
+    mins = x % 60;
+
+    printf("%d minutes equal to %d hours and %d minutes", x, hrs, mins);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q4) WAP that prints perimeter of a rectangle and take height and width as input**
+
+```c
+# include <stdio.h>
+
+int main() {
+    float h, w, p;
+
+    printf("Enter the height of the rectangle: ");
+    scanf("%f", &h);
+    printf("Enter the width of the rectangle: ");
+    scanf("%f", &w);
+
+    p = 2 * (h+w);
+    printf("Perimeter of the rectangle is %.2f units", p);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q5) WAP to Convert Cº to Fº**
 
 ```c
 # include <stdio.h>
@@ -59,7 +99,7 @@ int main() {
 ```
 <br><br>
 
-**Q4) WAP to caclulate volume of sphere**
+**Q6) WAP to caclulate volume of sphere**
 
 ```c
 # include <stdio.h>
@@ -78,7 +118,7 @@ int main() {
 ```
 <br><br>
 
-**Q5) WAP to convert km/h to mi/h**
+**Q7) WAP to convert km/h to mi/h**
 
 ```c
 # include <stdio.h>
@@ -96,7 +136,7 @@ int main() {
 ```
 <br><br>
 
-**Q6) WAP to swap two numbers using 3 variables**
+**Q8) WAP to swap two numbers using 3 variables**
 
 ```c
 # include <stdio.h>
@@ -114,7 +154,7 @@ int main() {
 ```
 <br><br>
 
-**Q7) WAP to swap two numbers using 3 variables**
+**Q9) WAP to swap two numbers using 2 variables**
 
 ```c
 # include <stdio.h>
@@ -132,7 +172,7 @@ int main() {
 ```
 <br><br>
 
-**Q8) WAP to caclulate the third angle of a triangle when two angles (in degrees) are given**
+**Q10) WAP to caclulate the third angle of a triangle when two angles (in degrees) are given**
 
 ```c
 # include <stdio.h>
@@ -148,7 +188,7 @@ int main() {
 ```
 <br><br>
 
-**Q9) WAP to caclulate the roots of a quadratic equation**
+**Q11) WAP to caclulate the roots of a quadratic equation**
 
 ```c
 # include <stdio.h>
@@ -168,7 +208,7 @@ int main() {
 ```
 <br><br>
 
-**Q10) WAP to caclulate compound interest**
+**Q12) WAP to caclulate compound interest**
 
 ```c
 # include <stdio.h>
@@ -186,7 +226,154 @@ int main() {
 ```
 <br><br>
 
-**Q11) WAP to find if an year is a leap year**
+**Q13) WAP to calculate the value of a,b,c,d after executing the following statements: `a=1394; b=a%10; a=a/10; c=a%10; a=a/10; d=a%10; a=a/10;`**
+
+```c
+# include <stdio.h>
+
+int main() {
+    int x = 1394;
+    int a = x;
+    int b, c, d;
+
+    b = a % 10;
+    a = a / 10;
+    c = a % 10;
+    a = a / 10;
+    d = a % 10;
+    a = a / 10;
+
+    printf("Given that at the starting, the value of a was %d, now the values are as followes:\n\n", x);
+    printf("a: %d\n", a);
+    printf("b: %d\n", b);
+    printf("c: %d\n", c);
+    printf("d: %d\n", d);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q14) WAP to accept a 3 digit number from the user and display the sum of all its digits**
+
+```c
+# include <stdio.h>
+# include <string.h>
+
+int main() {
+    int  x;
+    int  i;
+    int  dig;
+    int  sum=0;
+    char x_str[4];
+
+    printf("Enter a 3 digit number: ");
+    scanf("%3d", &x);
+
+    sprintf(x_str, "%d", x);
+    for (i=0; i<strlen(x_str); i++) {
+        dig  = (int)x_str[i];
+        dig -= 48;
+        sum += dig;
+    }
+
+    printf("The sum of the digits of %d is %d", x, sum);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q15) WAP to take a dimater of a circle as input and calculate the area and circumphrence of the circle**
+
+```c
+# include <stdio.h>
+# include <cmath>
+
+int main() {
+    float x;
+    float area, peri;
+    
+    printf("Enter the diamater of the circle: ");
+    scanf("%f", &x);
+
+    x   /= 2;
+    peri = 2 * M_PI * x;
+    area = M_PI * x * x;
+
+    printf("For a circle having a diameter of %.2f units, the circumfrence is %.2f units and the area is %.2f sq. units", x*2, peri, area);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q17) WAP to accept in in smallcase, convert it to uppercase, and display the ASCII values of both the cases**
+
+```c
+# include <stdio.h>
+
+int main() {
+    char x;
+    char x_up;
+
+    printf("Enter an alphabet in small case: ");
+    scanf("%c", &x);
+
+    x_up = x - 32;
+
+    printf("\nLowercase: %c (%d)", x,    x);
+    printf("\nUppercase: %c (%d)", x_up, x_up);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q18) WAP to find greatest among two numbers**
+
+```c
+# include <stdio.h>
+
+int main() {
+    int a = 59;
+    int b = 44;
+    int grt;
+
+    grt = (a>b) ? a : b;
+
+    printf("\n\nThe greatest number among %d and %d is %d", a, b, grt);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q19) WAP to caclulate if the sum of the last two digits of an integer is even or odd**
+
+```c
+# include <stdio.h>
+
+int main() {
+    int  x = 134;
+    int  y,z;
+    int  sum;
+    bool is_even;
+
+    z       = x%10;
+    y       = x%100 / 10;
+    sum     = x + y;
+    is_even = sum%2==0;
+
+    printf("\n\nThe sum of the last two digits of %d is ", x);
+    is_even ? printf("even") : printf("odd");
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q21) WAP to find if an year is a leap year**
 
 ```c
 # include <stdio.h>
@@ -209,7 +396,7 @@ int main() {
 ```
 <br><br>
 
-**Q12) WAP to find if a number is even or not**
+**Q22) WAP to find if a number is even or not**
 
 ```c
 # include <stdio.h>
@@ -232,7 +419,7 @@ int main() {
 ```
 <br><br>
 
-**Q13) WAP to find if a character is capital or not**
+**Q23) WAP to find if a character is capital or not**
 
 ```c
 # include <stdio.h>
@@ -257,7 +444,7 @@ int main() {
 ```
 <br><br>
 
-**Q14) WAP to find if a character is a digit or not**
+**Q24) WAP to find if a character is a digit or not**
 
 ```c
 # include <stdio.h>
@@ -282,43 +469,128 @@ int main() {
 ```
 <br><br>
 
-**Q15) WAP to find greatest among two numbers**
+**Q25) WAP to accept 5 numbers and display their sum, average, and standard deviation**
 
 ```c
 # include <stdio.h>
+# include <cmath>
 
 int main() {
-    int a = 59;
-    int b = 44;
-    int grt;
+    int   a,b,c,d,e;
+    int   sum;
+    float avg;
+    float dev;
 
-    grt = (a>b) ? a : b;
+    printf("Enter 5 numbers: ");
+    scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);
 
-    printf("\n\nThe greatest number among %d and %d is %d", a, b, grt);
+    sum = a+b+c+d+e;
+    avg = sum / 5.0;
+    // https://www.scribbr.com/statistics/standard-deviation/
+    dev = pow(a-avg,2) + pow(b-avg,2) + pow(c-avg,2) + pow(d-avg,2) + pow(e-avg,2);
+    dev = dev / 4;
+    dev = sqrt( (double)dev );
+
+    printf("\nGiven that the set of the numbers is a population, the sum of the numbers is %d, the average is %.2f, and the standard deviation is %.2f", sum, avg, dev);
 
     printf("\n");
 }
 ```
 <br><br>
 
-**Q16) WAP to caclulate if the sum of the last two digits of an integer is even or odd**
+**Q26) WAP to accept a 4 digit number and display its palindrome**
 
 ```c
 # include <stdio.h>
 
 int main() {
-    int  x = 134;
-    int  y,z;
-    int  sum;
-    bool is_even;
+    int  x;
+    char x_str[5];
 
-    z       = x%10;
-    y       = x%100 / 10;
-    sum     = x + y;
-    is_even = sum%2==0;
+    printf("Enter a 4 digit number: ");
+    scanf("%4d", &x);
 
-    printf("\n\nThe sum of the last two digits of %d is ", x);
-    is_even ? printf("even") : printf("odd");
+    sprintf(x_str, "%d", x);
+    char pal[5] = { x_str[3], x_str[2], x_str[1], x_str[0], '\0' };
+
+    printf("The palindrome of %d is %s", x, pal);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q27) WAP to accept a character and display wether it is a vowel or consonant. Make use of conditional operator**
+
+```c
+# include <stdio.h>
+
+int main() {
+    char x;
+    bool is_vow;
+
+    printf("Enter a character: ");
+    scanf("%c", &x);
+
+    is_vow = x=='a' || x=='e' || x=='i' || x=='o' || x=='u' || x=='A' || x=='E' || x=='I' || x=='O' || x=='U';
+
+    printf("%c is a ", x);
+    is_vow ? printf("vowel") : printf("constant");
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q28) WAP to find out the memory allocated by int, float, long, char, double, short int, unsigned int, and unsigned char**
+
+```c
+# include <stdio.h>
+
+int main() {
+    int           _int;
+    float         _float;
+    long          _long;
+    char          _char;
+    double        _double;
+    short int     _short_int;
+    unsigned char _unsigned_char;
+
+    printf("The amount of memory (in bytes) occupied by different types of variables is given below: \n\n");
+    printf("int: %lu\n", sizeof _int);
+    printf("float: %lu\n", sizeof _float);
+    printf("long: %lu\n", sizeof _long);
+    printf("char: %lu\n", sizeof _char);
+    printf("double: %lu\n", sizeof _double);
+    printf("short int: %lu\n", sizeof _short_int);
+    printf("unsigned char: %lu\n", sizeof _unsigned_char);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q99) WAP to accept a 4 digit number and display the product of digits placed at even places and do the same with digits placed at odd places**
+
+```c
+# include <stdio.h>
+# include <string.h>
+
+int main() {
+    int  x;
+    int  i;
+    int  dig;
+    int  prod=1;
+    char x_str[5];
+
+    printf("Enter a 3 digit number: ");
+    scanf("%3d", &x);
+
+    sprintf(x_str, "%d", x);
+    for (i=0; i<strlen(x_str); i++) {
+        dig  = (int)x_str[i];
+        dig -= 48;
+    }
 
     printf("\n");
 }

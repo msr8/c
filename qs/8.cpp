@@ -1,11 +1,13 @@
-// WAP to caclulate the third angle of a triangle when two angles (in degrees) are given
+// WAP to swap two numbers using 3 variables
 # include <stdio.h>
 
 int main() {
-    int a = 70;
-    int b = 45;
-    int c = 180-a-b;
-    printf("\n\nAssuming that the two angles are %ddegrees and %ddegrees, the third angle is %ddegrees", a, b, c);
+    int a = 5;
+    int b = 7;
+    int c = a;
+    a = b;
+    b = c;
+    printf("\nA:%d, B:%d", a, b);
 
     printf("\n");
 }

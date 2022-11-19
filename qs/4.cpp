@@ -1,16 +1,17 @@
-// WAP to caclulate volume of sphere
+// WAP that prints perimeter of a rectangle and take height and width as input
 # include <stdio.h>
-# include <cmath>
 
 int main() {
-    float rad, vol;
+    float h, w, p;
 
-    printf("Enter the radius of the sphere: ");
-    scanf("%f", &rad);
-    vol = (4/3.0) * M_PI * pow(rad, 3);
-    printf("\nGiven that the radius is %.2f units, volume of the sphere is %.2f cubic units", rad, vol);
+    printf("Enter the height of the rectangle: ");
+    scanf("%f", &h);
+    printf("Enter the width of the rectangle: ");
+    scanf("%f", &w);
+
+    p = 2 * (h+w);
+    printf("Perimeter of the rectangle is %.2f units", p);
 
     printf("\n");
 }
-
 

@@ -1,15 +1,14 @@
-// WAP to swap two numbers using 3 variables
+// WAP to convert km/h to mi/h
 # include <stdio.h>
 
 int main() {
-    int a = 5;
-    int b = 7;
-    a = a+b;
-    b = a-b;
-    a = a-b;
-    printf("\nA:%d, B:%d", a, b);
+    int km, mi;
+
+    printf("Enter the speed in km/h: ");
+    scanf("%d", &km);
+    mi = km / 1.609;
+    printf("\n%d km/h is equal to %d mi/h", km, mi);
 
     printf("\n");
 }
-
 

@@ -110,7 +110,7 @@ def c_webpage_gen():
 
         data[key] = dic
     
-    to_write = ''
+    to_write = '<br><br>'
 
     for key in data:
         dic       = data[key]

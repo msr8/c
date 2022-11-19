@@ -1,18 +1,13 @@
-// WAP to find if a number is even or not
+// WAP to caclulate compound interest
 # include <stdio.h>
+# include <cmath>
 
 int main() {
-    int  x;
-    bool is_even;
-
-    printf("\n\nEnter a number: ");
-    scanf("%d", &x);
-
-    is_even = x%2 == 0;
-
-    printf("%d is ", x);
-    is_even ? printf("an") : printf("not a");
-    printf(" even number");
+    int p = 1e3;
+    int r = 10;
+    int t = 2;
+    int ci =  ( p * pow(1+(r/100.0) , t) ) - p;
+    printf("Given that the principle is %d, rate is %d%% over %dyrs, the CI is %d\n", p,r,t,ci);
 
     printf("\n");
 }

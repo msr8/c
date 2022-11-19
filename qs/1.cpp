@@ -1,7 +1,6 @@
 // WAP to calculate SI, given principal = 10k, rate = 5%, time = 5yrs
 # include <stdio.h>
 
-
 int main() {
     float prin = 1e4;
     float rate = 5;

@@ -1,18 +1,17 @@
-// WAP to Convert Cº to Fº
+// WAP to take mins as input and display total number of hours and minutes
 # include <stdio.h>
 
 int main() {
-    float c,f;
+    int x, mins, hrs;
 
-    printf("Enter the temperature in celcius: ");
-    scanf("%f", &c);
-    f = (c * 1.8) + 32;
-    printf("\n%.1fºC is equal to %.1fºF", c, f);
+    printf("Enter the total number of minutes: ");
+    scanf("%d", &x);
+
+    hrs  = x / 60;
+    mins = x % 60;
+
+    printf("%d minutes equal to %d hours and %d minutes", x, hrs, mins);
 
     printf("\n");
 }
-
-
-
-
 
