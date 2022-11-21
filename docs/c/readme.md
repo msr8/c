@@ -391,7 +391,7 @@ int main() {
 
     z       = x%10;
     y       = x%100 / 10;
-    sum     = x + y;
+    sum     = y + z;
     is_even = sum%2==0;
 
     printf("\n\nThe sum of the last two digits of %d is ", x);
@@ -620,6 +620,91 @@ int main() {
         printf("The ratio of %d+%d and %d-%d is %.2f", a, b, c, d, res);
     }
 
+    printf("\n");
+}
+```
+<br><br>
+
+**Q30) WAP to input an employees sallery and print out his gross sallery, considering that if his basic sallery is <1500, then his HRA is 10% and his DA is 90%. Otherwise, his HRA is Rs500 and his DA is 98%**
+
+```c
+# include <stdio.h>
+
+int main() {
+    float sal, hra, da, sum;
+
+    printf("Enter your sallery: ");
+    scanf("%f", &sal);
+
+    if (sal < 1500) {
+        hra = 0.1 * sal;
+        da  = 0.9 * sal;
+    }
+    else {
+        hra = 500;
+        da  = 0.98 * sal;
+    }
+    sum = sal + hra + da;
+
+    printf("Considering your sallery is %.2f, your HRA is %.2f and your DA is %.2f, thus making your total sallery %.2f", sal, hra, da, sum);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q31) WAP to tell if an employee has company insurance or not considering that the company insures them only if they're married, they're unmarried and are 30+ yr old male, or they're unmarried and are a 25+ yr old female**
+
+```c
+# include <stdio.h>
+
+int main() {
+    int  age;
+    char marr;
+    char gend;
+    bool is_insured;
+
+    // https://stackoverflow.com/questions/24099976/read-two-characters-consecutively-using-scanf-in-c
+    printf("Please enter your gender (M for male and F for female): ");
+    scanf(" %c", &gend);
+    printf("Please enter your marital status (M for married and U for unmarried): ");
+    scanf(" %c", &marr);
+    printf("Please enter your age: ");
+    scanf("%d", &age);
+
+    is_insured = (marr=='M') || (marr=='U' and gend=='M' and age>=30) || (marr=='U' and gend=='F' and age>=25);
+
+    printf("\nYou are ");
+    if (!is_insured)    { printf("not "); }
+    printf("insured");
+    printf("\n\n%c %c %d", gend, marr, age);
+
+    printf("\n");
+}
+```
+<br><br>
+
+**Q32) WAP to accept the length and breadth of a rectangle and determine if, magnitude wise, area is greater than the perimeter or is perimeter greater than the area**
+
+```c
+# include <stdio.h>
+
+int main() {
+    float l,b;
+    float p,a;
+
+    printf("Please enter the length of the rectangle: ");
+    scanf("%f", &l);
+    printf("Please enter the breadth of the rectangle: ");
+    scanf("%f", &b);
+
+    p = 2 * (l+b);
+    a = l * b;
+
+    printf("Given that the length and breadth of a rectangle is %.2f units and %.2f units respectively, magnitude wise, the ", l, b);
+    p > a ? printf("perimeter") : printf("area");
+    printf(" is greater than the ");
+    p < a ? printf("perimeter") : printf("area");
 
     printf("\n");
 }

@@ -17,7 +17,6 @@ int main() {
         printf("The ratio of %d+%d and %d-%d is %.2f", a, b, c, d, res);
     }
 
-
     printf("\n");
 }
 

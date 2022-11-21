@@ -9,7 +9,7 @@ int main() {
 
     z       = x%10;
     y       = x%100 / 10;
-    sum     = x + y;
+    sum     = y + z;
     is_even = sum%2==0;
 
     printf("\n\nThe sum of the last two digits of %d is ", x);

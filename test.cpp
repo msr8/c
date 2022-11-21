@@ -2,9 +2,13 @@
 #include <string.h>
 
 int main() {
-    int x = 811;
-    
-    printf("h%2d", x);
+    bool a = true;
+    bool b = false;
+
+    (a || b) ? printf("true\n") : printf("false\n");
+    (a or b) ? printf("true\n") : printf("false\n");
+    (a && b) ? printf("true\n") : printf("false\n");
+    (a and b) ? printf("true\n") : printf("false\n");
 
 
 
