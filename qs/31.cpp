@@ -20,7 +20,6 @@ int main() {
     printf("\nYou are ");
     if (!is_insured)    { printf("not "); }
     printf("insured");
-    printf("\n\n%c %c %d", gend, marr, age);
 
     printf("\n");
 }
