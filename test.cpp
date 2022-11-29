@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
-    bool a = true;
-    bool b = false;
+    int  c = 8;
+    int  d = 17;
 
-    (a || b) ? printf("true\n") : printf("false\n");
-    (a or b) ? printf("true\n") : printf("false\n");
-    (a && b) ? printf("true\n") : printf("false\n");
-    (a and b) ? printf("true\n") : printf("false\n");
+    for (c++; c==9; d++) {
+        printf("%d\n", d);
+        c++;
+    }
+
+    printf("End: c:%d d:%d", c, d);
 
 
 
