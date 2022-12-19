@@ -1,75 +1,89 @@
-<!DOCTYPE html>
 <html>
+
 <head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
+
 <style>
-table {
-  border-collapse: collapse;
-  table-layout:fixed;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-div {
-    /* overflow-x: auto; */
-    word-wrap: break-all;
-}
-
-tr:nth-child(even) {background-color: #f2f2f2;}
+    html {
+        background-color: #090e12;
+        color: white;
+        background-image: url("https://raw.githubusercontent.com/msr8/wallpapers/main/lofi%20girl%202345x1286.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .a {
+        font-family: Comfortaa;
+        color: white;
+        font-size: 200%;
+        background-color: transparent;
+        border: 2px solid rebeccapurple;
+        border-radius: 10px;
+        padding-left: 1ch;
+        padding-right: 1ch;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: 0.5s;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    }
+    .a:hover {
+        background-color: rgba(0, 0, 0, .3);
+    }
 </style>
 </head>
+
+
+
 <body>
 
-<h2>Responsive Table</h2>
-<p>A responsive table will display a horizontal scroll bar if the screen is too 
-small to display the full content. Resize the browser window to see the effect:</p>
-<p>To create a responsive table, add a container element (like div) with <strong>overflow-x:auto</strong> around the table element:</p>
 
-<div>
-  <table>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>okayyyyyyyyyyy</th>
-      <th>okayyyyyyyyyyy</th>
-      <th>okayyyyyyyyyyy</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>okayyyyyyyyyyy</td>
-      <td>okayyyyyyyyyyy</td>
-      <td>okayyyyyyyyyyy</td>
-    </tr>
-  </table>
-</div>
+<form>
+    <label>Name: </label>
+    <input type="text", name="name">
+    <br>
+    <label>Gender: </label>
+    <input type="radio", value="male", name="gender">
+    <label>Male</label>
+    <input type="radio", value="female", name="gender">
+    <label>Female</label>
+    <input type="radio", value="other", name="gender">
+    <label>Other</label>
+    <br>
+    <label>D.O.B.: </label>
+    <input type="date", name="dob">
+    <br>
+    <label>Roll Number: </label>
+    <input type="number", name="rollno">
+    <br>
+    <label>Email: </label>
+    <input type="email", name="email">
+    <br>
+    <label>Phone: </label>
+    <input type="tel", name="phone">
+    <br>
+    <label>Favorite Color: </label>
+    <input type="color", name="favcolor">
+    <br><br>
+    <label>Clubs: </label><br>
+    <input type="checkbox", value="programming", name="club">
+    <label>Programming</label><br>
+    <input type="checkbox", value="art", name="club">
+    <label>Art</label><br>
+    <input type="checkbox", value="reading", name="club">
+    <label>Reading</label><br>
+    <input type="checkbox", value="theatre", name="club">
+    <label>Theatre</label><br>
+    <br>
+    <label>ID Proof: </label><br>
+    <input type="file", name="photo">
+    <br><br><br><br>
+    <input type="submit", value="Submit", class="a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="reset", class="a">
+
+</form>
+
 
 </body>
+
 </html>
-
-
