@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-const char *chhex2bin(char x) {
+const char* chhex2bin(char x) {
     switch (x) {
         case '0':    return "0000";
         case '1':    return "0001";
@@ -23,7 +23,6 @@ const char *chhex2bin(char x) {
         case 'F':    return "1111";
         default:     return "invalid";
     }
-
 }
 
 

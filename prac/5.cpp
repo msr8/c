@@ -1,4 +1,4 @@
-// WAP to calculate the Armstrong nos. b/w 1 and 500
+// WAP to calculate the Armstrong numbers between 1 and 500
 #include <stdio.h>
 #include <string.h>
 #include <cmath>

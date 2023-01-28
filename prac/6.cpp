@@ -1,4 +1,4 @@
-// WAP to determine if a no. is prime or not
+// WAP to determine if a number is prime or not
 #include <stdio.h>
 #include <string.h>
 #include <cmath>
