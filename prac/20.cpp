@@ -10,13 +10,13 @@ int main() {
 
     printf("Enter the number of integers in the array: ");
     scanf("%d", &n);
-    arr = (int*) malloc(n * sizeof(int));
+    arr = (int*) calloc(n, sizeof(int));
     printf("\n");
     for(i=0; i<n; i++) {
         printf("Enter integer number %d: ", i+1);
         scanf("%d", &arr[i]);
     }
-    
+
     printf("\n\033[1;97mINDEX: VALUE\033[0m\n");
     for(i=0; i<n; i++) {
         printf("%d: %d\n", i, *(arr+i));

@@ -1,5 +1,6 @@
 import os
 
+
 def color_gen():
     """
     It generates a C program that prints out all the possible combinations of colors and styles

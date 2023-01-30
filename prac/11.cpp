@@ -22,7 +22,7 @@ int main() {
     scanf("%d",&x);
 
     for(int i=1; i<=n;i++) {
-        elem = pow(x,j) / (float)fact(j);
+        elem = pow(x,j) / fact(j);
 
         if (op=='+') {
             ans += elem;
@@ -37,7 +37,7 @@ int main() {
 
     }
 
-    printf("\n\n%f", ans);
+    printf("\n%f", ans);
 
     printf("\n");
 }

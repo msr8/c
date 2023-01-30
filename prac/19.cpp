@@ -3,12 +3,12 @@
 #define ARR_LEN 10
 
 
+
 int max(int *arr) {
     int res=arr[0];
 
     for (int i=0; i<ARR_LEN; i++) {
         if (arr[i] > res)    {res = arr[i];}
-
     }
 
     return res;
