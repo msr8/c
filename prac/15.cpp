@@ -22,9 +22,9 @@ int main() {
     printf("Enter the radius: ");
     scanf("%f", &x);
 
-    printf("\nDiameter: %.3f units\n", diameter(x));
+    printf("\nDiameter:     %.3f units\n", diameter(x));
     printf("Circumfrence: %.3f units\n", circumfrence(x));
-    printf("Area: %.3f sq. units\n", area(x));
+    printf("Area:         %.3f sq. units\n", area(x));
 
     printf("\n");
 }

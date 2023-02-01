@@ -1,68 +1,60 @@
 import os
 
-def c_webpage_gen():
+
+def c_md_gen():
     inp_dir = '/Users/mark/school/prac'
     out_fp  = '/Users/mark/school/prac/file.md'
-    data    = {}
-    keys    = []
+    ss_dir  = '/Users/mark/school/prac/screenshots'
+    newpage = '<div style="page-break-after: always; visibility: hidden">\\pagebreak</div>'
 
-    for fn in os.listdir(inp_dir):
-        if fn.startswith('.'):         continue
-        if not fn.endswith('.cpp'):    continue
+    markdown = ''
 
-        key = fn.strip('.cpp')
-        key = int(key)
-        keys.append(key)
-    
-    keys.sort()
-
-    for key in keys:
-        dic = {}
-        fp  = os.path.join(inp_dir, f'{key}.cpp')
-        with open(fp) as f:    file_data = f.read()
+    for i in range(1, 46):
+        markdown += f'''## Q{i}) '''
+        with open(f'{inp_dir}/{i}.cpp') as f:
+            file_data = f.read()
         lines = file_data.split('\n')
-        dic['q'] = lines[0].strip('//').strip(' ')
-        dic['a'] = '\n'.join(lines[1:]).strip('\n')
-
-        data[key] = dic
+        ques  = lines[0].split('//')[1].strip()
+        code  = '\n'.join(lines[1:]).strip()
+        markdown += ques
+        markdown += f'\n\n<br>\n\n```c\n{code}\n```\n\n<br><br>\n\n<center> <img src="{ss_dir}/{i}.png"> </center>\n\n{newpage}\n\n'
     
-    to_write = '<br><br>'
+    with open(out_fp, 'a') as f:
+        f.write(markdown)
 
-    for key in data:
-        dic       = data[key]
-        to_write += f'''\
-**Q{key}) {dic["q"]}**\n
-```c
-{dic["a"]}
-```
-<br><br>\n\n'''
+
+
+
+def c_table_gen(): 
+    inp_dir = '/Users/mark/school/prac'
+    out_fp  = '/Users/mark/school/prac/file.md'
+    ss_dir  = '/Users/mark/school/prac/screenshots'
+    newpage = '<div style="page-break-after: always; visibility: hidden">\\pagebreak</div>'
+
+    markdown  = '| S.No. | Question |\n'
+    markdown += '| ----- | -------- |\n'
+
+    for i in range(1, 46):
+        with open(f'{inp_dir}/{i}.cpp') as f:
+            file_data = f.read()
+        lines = file_data.split('\n')
+        ques  = lines[0].split('//')[1].strip()
+        markdown += f'| {i} | {ques} |\n'
     
+    markdown += f'\n{newpage}\n\n'
+
     with open(out_fp, 'w') as f:
-        f.write(to_write)
+        f.write(markdown)
 
 
 
 
 
 
-c_webpage_gen()
 
-# def _t():
-#     dir = '/Users/mark/school/prac'
-#     data = r'''// 
-# #include <stdio.h>
+# c_webpage_gen()
+c_table_gen()
+c_md_gen()
 
-
-# int main() {
-
-#     printf("\n");
-# }'''
-
-#     for i in range(15,46):
-#         fp = os.path.join(dir, f'{i}.cpp')
-#         with open(fp, 'w') as f:
-#             f.write(data)
-
-# _t()
 
 

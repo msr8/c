@@ -1,4 +1,4 @@
-// WAP TO FIND THE SUM OF SERIES-“X-X^3/3!+X^5/5!-X^7/7!+X^9/9!....n “terms
+// WAP to find the sum of series "x - x^3/3! + x^5/5! - x^7/7! + x^9/9!....n " terms
 #include <stdio.h>
 #include <string.h>
 #include <cmath>
@@ -12,18 +12,20 @@ int fact(int x) {
 
 
 int main() {
-    int n=5,x;
-    int j=1;
+    int   x;
+    int   n;
     float ans=0;
-    char op='+';
+    char  op='+';
     float elem;
+    int   j=1;
 
     printf("Enter the value of x: ");
     scanf("%d",&x);
+    printf("Enter the number of terms: ");
+    scanf("%d",&n);
 
-    for(int i=1; i<=n;i++) {
+    for(int i=1; i<=n; i++) {
         elem = pow(x,j) / fact(j);
-
         if (op=='+') {
             ans += elem;
             op = '-';
@@ -32,9 +34,7 @@ int main() {
             ans -= elem;
             op = '+';
         }
-
         j+=2;
-
     }
 
     printf("\n%f", ans);
