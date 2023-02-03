@@ -1,0 +1,16 @@
+Teacher, Name, Age, Subject, Salary, Course  {
+    display: block;
+}
+
+Teacher {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(245,222,179, 0.8);
+    border-radius: 5px;
+}
+
+Name {
+    font-family: Comfortaa;
+    font-size: 2em;
+    text-align: center;
+}

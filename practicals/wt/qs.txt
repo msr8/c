@@ -1,0 +1,109 @@
+Q1) Make the following five different web pages:
+        1. Formatting styles and headings: Include bold, italics, underline, strike, subscript, superscript and all six types of headings.
+        2. Font styles and image tag
+        3. Marquee: Move text, image and hyperlink
+        4. Other tags: br, hr. pre, p
+    Include following specifications:
+        • In all these web pages only mention about use, attributes apply them
+        • Insert a background image on home page
+        • Make all the topics as hyperlinks and go to some other page for description
+        • Insert a marquee showing HTML Tutorial as moving text.
+        • Use different font style for different topics.
+        • On every page, make a hyperlink for going back to home page and internal link also
+
+
+
+Q2) Create an unordered list nested inside ordered list and apply the following:
+    • Insert an image of main item on top right corner of web page.
+    • Display heading as a marquee.
+    • Use different font styles and colors for different ordered list items.
+    • Insert horizontal line after each ordered item.
+
+
+
+Q3) Design a table with row span and column span and make use of attributes colspan, rowspan, width, height, cellpadding, cellspacing, etc
+
+
+
+Q4) Design following frames:
+    ______________________________
+    | MAIN MENU   | Exaplanation |
+    |             |              |
+    |             |              |
+    |             | View Example |
+    |             |______________|
+    |             | Example      |
+    | Topic 1     |              |
+    | Topic 2     |              |
+    | Topic 3     |              |
+    ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+
+
+Q5) Create a student registration form for admission in college
+
+
+
+Q6) Create a webpage and show the usage of inline, internal, and external stylesheet
+
+
+
+Q7) Create a webpage containing a background image and apply all the background styling attributes.
+
+
+
+Q8) Create a webpage showing the usage of font styling attributes
+    • Font size
+    • Font family
+    • Font style
+    • Font weight
+    • Text transform
+    • Text decoration
+
+
+
+Q9) Create a web page and apply all text styling attributes using ID and class selector
+
+
+
+Q10) Create a webpage with three equal columns
+
+
+
+Q11) Create a webpage containing a bootstrap table
+
+
+
+Q12) Create a webpage containing various types of images
+
+
+
+Q13) Create a webpage containing various types of buttons
+
+
+
+Q14) Create a webpage containing various typography classes
+    • Headings
+    • Display heading
+    • Color
+    • Background Color
+    • Lead paragraph
+    • Inline text element
+    • Abbreviaions
+    • Block quote
+
+
+
+Q15) Write a program to show the usage of alert box and confirm box
+
+
+
+Q16) Write a program to show the usage of all the date, math and string object functions
+
+
+
+Q17) WAP to display the bookstore details in XML with CSS and internal DTD
+
+
+
+Q18) WAP to format the Teacher details in XML with CSS using external DTD

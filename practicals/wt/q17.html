@@ -1,0 +1,50 @@
+<!ELEMENT bookstore (book+)>
+<!ELEMENT book (title, author, price)>
+<!ELEMENT title_ (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+
+<style>
+    book {
+        display: inline-block;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    title_ {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    author {
+        font-size: 14px;
+        font-style: italic;
+    }
+    price {
+        font-size: 16px;
+        color: green;
+    }
+</style>
+
+
+<bookstore>
+    <book>
+        <title_>To Kill a Mockingbird</title_>
+        <author>Harper Lee</author>
+        <price>1099</price>
+    </book>
+
+    <book>
+        <title_>Pride and Prejudice</title_>
+        <author>Jane Austen</author>
+        <price>899</price>
+    </book>
+
+    <book>
+        <title_>The Great Gatsby</title_>
+        <author>F. Scott Fitzgerald</author>
+        <price>999</price>
+    </book>
+</bookstore>
+
+

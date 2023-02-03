@@ -1,0 +1,49 @@
+<!ELEMENT TeacherDetails (Name, Age, Salary, Subject, Course)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+<!ELEMENT Subject (#PCDATA)>
+<!ELEMENT Course (#PCDATA)>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th,td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: lightgray;
+    }
+</style>
+
+
+
+<h1>Teacher Details</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Department</th>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>Mathematics</td>
+        <td>Science</td>
+    </tr>
+    <tr>
+        <td>Jane Doe</td>
+        <td>English</td>
+        <td>Humanities</td>
+    </tr>
+    <tr>
+        <td>Jim Smith</td>
+        <td>History</td>
+        <td>Social Sciences</td>
+    </tr>
+</table>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE TeacherDetails SYSTEM "teacher.dtd">
+<TeacherDetails>
+    <Teacher>
+        <Name>Rakesh Sharma</Name>
+        <Age>45</Age>
+        <Salary>80,000</Salary>
+        <Subject>Mathematics</Subject>
+        <Course>BCA</Course>
+    </Teacher>
+
+    <Teacher>
+        <Name>Anjali Batra</Name>
+        <Age>39</Age>
+        <Salary>150,000</Salary>
+        <Subject>Computer Science</Subject>
+        <Course>B.Tech</Course>
+    </Teacher>
+
+    <Teacher>
+        <Name>Mohan Kumar</Name>
+        <Age>51</Age>
+        <Salary>97,000</Salary>
+        <Subject>Web Technology</Subject>
+        <Course>BCA</Course>
+    </Teacher>
+</TeacherDetails>

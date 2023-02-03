@@ -1,0 +1,6 @@
+<!ELEMENT TeacherDetails (Name, Age, Salary, Subject, Course)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+<!ELEMENT Subject (#PCDATA)>
+<!ELEMENT Course (#PCDATA)>

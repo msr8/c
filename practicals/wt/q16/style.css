@@ -1,0 +1,23 @@
+html {
+    background-image: url('https://raw.githubusercontent.com/msr8/wallpapers/main/neon%20planet.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+body {
+    background: transparent;
+}
+.heading {
+    font-size: 3em;
+    font-family: Comfortaa;
+    text-align: center;
+    text-decoration: underline;
+    backdrop-filter: blur(5px);
+}
+div {
+    background-color: rgba(0,0,0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+}
