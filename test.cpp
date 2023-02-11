@@ -1,49 +1,23 @@
-#include <cmath>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-
-// void rev_str(char *src, char *dest) {
-//     int src_len = strlen(src);
-
-//     for(int i=0; i<src_len; i++) {
-//         dest[src_len-i-1] = src[i];
-//     }
-
-//     dest[src_len] = '\0';
-// }
-
-
-// int main() {
-//     int  x;
-//     char x_str[100];
-//     char x_rev_str[100];
-//     int  x_rev;
-
-//     printf("Enter a number: ");
-//     scanf("%d", &x);
-
-//     sprintf(x_str, "%d", x);
-//     rev_str(x_str, x_rev_str);
-//     x_rev = atoi(x_rev_str);
-
-//     printf("\nReverse of %d is %d", x, x_rev);
-
-//     printf("\n");
-// }
-
-
-
-int main() {
-    int a=1;
-    int b=2;
-    int c=3;
-
-    int *arr[3] = {&a, &b, &c};
-
-    printf("%p | %p", arr[1], &b);
-
-    printf("\n");
+#include<stdio.h>
+int rec(int);
+int main()
+{
+int a,fact;
+printf("Enter any number");
+scanf("%d",&a);
+fact = rec(a);
+printf("Factorial Value=%d",fact);
 }
-
+int rec(int x)
+{
+int f;
+if(x==1)
+{
+return(1);
+}
+else
+{
+f = x *rec(x-1); //3 * rec(2) //3* rec(2) * rec(1) //3*2*1 //6
+}
+return (f);
+}

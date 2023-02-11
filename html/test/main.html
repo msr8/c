@@ -1,4 +1,124 @@
-<frameset cols="50%, 50%">
-    <frame name="left"  src="left.html"></frame>
-    <frame name="right" src="right.html"></frame>
-</frameset>
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>product-landing-page</title>
+  </head>
+  
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://i.ibb.co/F65nv59/book-logo-1.png"/>
+      <nav id="nav-bar">
+        <ul>
+          <li class="nav-link">Features
+</li>
+          <li class="nav-link">Reviews</li>
+          <li class="nav-link">Bundles</li>
+        </ul>
+      </nav>
+    </header>
+
+      <form id="form">
+        <h1 id="form-header">Books for everyone</h1>
+
+        <input id="email" placeholder="Enter your email adress"></input>
+
+        <form method="POST" action="https://www.freecodecamp.com/email-submit">
+          <input id="submit" type="submit" href=""></input>   
+        </form>
+      </form>
+
+      <section id="description-section">
+        <div>
+          <div class="icon-text">
+            <img class="icon" src="https://i.ibb.co/fx3dp0D/eco.png"/>
+            <div class="text">
+              <h2>RECYCLED PAPER</h2>
+              <p>Our books are made out of recycled materials. It's better for planet and that keeps the price low.</p>
+            </div>
+          </div>
+
+          <div class="icon-text">
+            <img class="icon" src="https://i.ibb.co/tQ8rQ9P/truck.png">
+            <div class="text">
+              <h2>Fast Shipping</h2>
+              <p>We make sure you recieve your books as soon as possible. We also provide free returns if you are not satisfied.</p>
+            </div>
+          </div>
+
+
+          <div class="icon-text">
+            <img class="icon" src="https://i.ibb.co/WHF6N8y/quality.png">
+            <div class="text">
+              <h2>Quality Assurance</h2>
+              <p>For every purchase you make, we will ensure there are no damages or faults. Every copy is sealed and has a sticker which insures it haven't been opened.</p>
+            </div>
+          </div>
+        </div>
+
+        <section id="video-section">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1n2j_HeGS0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <section id="bundle-section">
+          <div class="bundle">
+            <header>Fantasy</header>
+
+            <h3>100$</h3>
+
+            <ul>
+              <li>The Eye of the World</li>
+              <li>A Game of Thrones</li>
+              <li>The Way of Kings</li>
+              <li>The Fellowship of the Ring</li>
+              <li>Sourcery</li>
+            </ul>
+
+            <input type="submit"></input>
+          </div>
+
+          <div class="bundle" id="middle">
+            <header>Novel</header>
+            
+            <h3>100$</h3>
+
+            <ul>
+              <li>Anna Karenina</li>
+              <li>To Kill a Mockingbird</li>
+              <li>The Great Gatsby</li>
+              <li>One Hundred Years of Solitude</li>
+              <li>A Passage to India</li>
+            </ul>
+
+            <input type="submit"></input>
+          </div>
+
+          <div class="bundle">
+            <header>Nonfiction</header>
+
+            <h3>100$</h3>
+
+            <ul>
+              <li>God: An Anatomy</li>
+              <li>The Snakehead</li>
+              <li>Pegasus</li>
+              <li>Queen of Our Times</li>
+              <li>The Rise and Reign of the Mammals</li>
+            </ul>
+
+            <input type="submit"></input>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Contact</li>
+        </ul>
+      </footer>
+  </body>
+</html>
