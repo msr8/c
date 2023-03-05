@@ -1,12 +1,11 @@
-let x = prompt("Enter a number:");
-let i=x;
-let product=1;
 
-while (i!=1) {
-    product *= i;
-    i = i-1;
-}
+    let element;
 
-alert(`The factorial of ${x} is ${product}`);
+    // The element with the class "a"
+    element = document.getElementById('main');
+    let childElement = document.getElementById('child');
 
+    childElement.innerHTML = 'This is text';
+    element.appendChild(childElement);
 
+    console.log('huh');
