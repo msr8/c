@@ -1,0 +1,24 @@
+============================== BINARY SEARCH ==============================
+
+ARR   = array of numbers. It must be sorted
+VAL   = item which location has to be found
+IND   = index of val
+START = starting index of sub-list we want to perform the search on
+END   = ending index of sub-list we want to perform the search on
+MID   = middle index of sub-list we want to perform the search on
+
+(this algo is for ascending order)
+
+1) INITIALIZE
+    START = 0/1 (depending on language)
+    END   = last index of array
+
+2) Repeat step 3 and 4 while END>START and ARR[MID]!=VAL
+
+3) MID = (int)( (start+end) / 2)
+
+4) IF DATA[MID] > VAL:    END   = MID-1
+   ELSE:                  START = MID+1
+
+5) IF DATA[MID]==VAL:     IND = MID
+   ELSE:                  IND = NULL

@@ -40,9 +40,9 @@ def binary_search(lis:list, val, start:int=0, end:int=None, default=None, is_asc
 
 # [612, 561, 351, -173, -430, -531, -615, -633, -856, -933] 466
 
-lis = [612, 561, 351, -173, -430, -531, -615, -633, -856, -933]
-val = 446
-print(binary_search(lis, val, is_ascending=False))
+# lis = [612, 561, 351, -173, -430, -531, -615, -633, -856, -933]
+# val = 446
+# print(binary_search(lis, val, is_ascending=False))
 
 
 '''
