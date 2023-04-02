@@ -45,9 +45,9 @@ def bubble_sort(lis:list):
     Bubble sort has a time complexity of O(n^2) in the worst case scenario, which makes it inefficient for large lists. \
     However, it has the advantage of being easy to understand and implement
     '''
-    lis_len = len(lis)
-
-    to_stop = False
+    lis_len  = len(lis)
+    to_stop  = False
+    boundary = 0
 
     # print(f'0.0: {lis}\n\n')
 
@@ -56,10 +56,18 @@ def bubble_sort(lis:list):
     while not to_stop:
         to_stop = True
         j = 1
-        for i in range(0, lis_len-1):
+        for i in range(0, lis_len-1-boundary):
             if lis[i] < lis[i+1]:
                 lis[i], lis[i+1] = lis[i+1], lis[i]    # Swaps the elements
                 to_stop = False                        # Tells the program that we had to swap elems, meaning the list might not be in order yet
             # print(f'{c}.{j}: {lis}')
             j += 1
         c += 1
+        boundary += 1
+
+
+
+
+# lis = [1,6,4,9,7,0]
+# bubble_sort(lis)
+
