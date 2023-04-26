@@ -16,7 +16,7 @@ CREATE TABLE publisher (
     P_ID                 VARCHAR(10),
     Name_of_publication  VARCHAR(30),
     Address              VARCHAR(50),
-    Phone_no             INT(10),
+    Phone_no             VARCHAR(10),
     Email_ID             VARCHAR(30)
 );
 DESC publisher;
@@ -25,7 +25,7 @@ CREATE TABLE author (
     A_ID     VARCHAR(10),
     name     VARCHAR(30),
     address  VARCHAR(50),
-    phone    INT(10),
+    phone    VARCHAR(10),
     email    VARCHAR(30)
 );
 DESC author;
