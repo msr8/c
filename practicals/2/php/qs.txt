@@ -1,0 +1,10 @@
+Q1)  Write a program to print hello world
+Q2)  Write a program to print the sum of two numbers
+Q3)  Write a program to print the sum of two numbers given by the user
+Q4)  Write a calculator
+Q5)  Write a program to check if a number is prime or composite
+Q6)  Write a program to check if a number is odd or even
+Q7)  Write a program to check if a word is a palindrome
+Q8)  Write a program to check if a number is an armstrong number
+Q9)  Write a program to swap two numbers
+Q10) Write a program to find the maximum of given numbers

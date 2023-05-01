@@ -1,7 +1,9 @@
 <?php
-    function hello() {
-        print("Hello World");
+    function add(&$x, $val) {
+        $x += $val;
     }
 
-    hello();
+    $x = 8;
+    add($x, 2);
+    print($x);  // 10
 ?>

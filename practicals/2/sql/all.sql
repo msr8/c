@@ -72,3 +72,42 @@ INSERT INTO review VALUES ('R1', 9057777720, 3),
                           ('R5', 3140866387, 1);
 SELECT * FROM review;
 
+
+
+
+
+USE online_book;
+-- Get the ISBN, title, and price of all the books whose price is greater than 600
+SELECT isbn,book_title,price FROM book WHERE price>600;
+-- Get all the information about the books of the "fantasy" category
+SELECT * FROM book where category='fantasy';
+-- Get all the information about the publishers operating from California
+SELECT * FROM publisher WHERE address LIKE '%CA %';
+-- Get author name using their email
+SELECT name FROM author where email='benjamin.taylor@gmail.com';
+-- Get all the information of the ratings above or equal to 3
+SELECT * FROM review WHERE rating>=3;
+
+
+
+
+
+USE online_book;
+-- Add a column
+ALTER TABLE book ADD author_name varchar(30);
+-- Rename a column
+ALTER TABLE book RENAME COLUMN author_name TO author;
+-- Change datatype of a column
+ALTER TABLE book MODIFY COLUMN author VARCHAR(50);
+-- Remove a column
+ALTER TABLE book DROP COLUMN year_of_publishing;
+-- Set a column to be the primary key
+ALTER TABLE book ADD PRIMARY KEY(ISBN);
+-- Remove the primary key
+ALTER TABLE book DROP PRIMARY KEY;
+-- Set a column to be the foreign key
+ALTER TABLE review ADD FOREIGN KEY(ISBN) REFERENCES book(ISBN);
+-- Remove a foreign key
+ALTER TABLE book DROP FOREIGN KEY ISBN;
+
+
