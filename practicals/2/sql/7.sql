@@ -7,5 +7,5 @@ SELECT * FROM book where category='fantasy';
 SELECT * FROM publisher WHERE address LIKE '%CA %';
 -- Get author name using their email
 SELECT name FROM author where email='benjamin.taylor@gmail.com';
--- Get all the information of the ratings above or equal to 3
-SELECT * FROM review WHERE rating>=3;
+-- Get all the information of the ratings in the range 2-4
+SELECT * FROM review WHERE rating BETWEEN 2 AND 4;

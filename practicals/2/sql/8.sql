@@ -11,7 +11,3 @@ ALTER TABLE book DROP COLUMN year_of_publishing;
 ALTER TABLE book ADD PRIMARY KEY(ISBN);
 -- Remove the primary key
 ALTER TABLE book DROP PRIMARY KEY;
--- Set a column to be the foreign key
-ALTER TABLE review ADD FOREIGN KEY(ISBN) REFERENCES book(ISBN);
--- Remove a foreign key
-ALTER TABLE book DROP FOREIGN KEY ISBN;

@@ -1,0 +1,25 @@
+<mxfile host="Electron" modified="2023-05-07T10:22:58.772Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="Om0au7mPRpapvu-7KVr7" version="21.2.8" type="device">
+  <diagram name="Page-1" id="A8Xz9dPlOfeLtD28lW7g">
+    <mxGraphModel dx="909" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CuldGSnMmpijeKUYHdOZ-1" value="u =" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="300" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CuldGSnMmpijeKUYHdOZ-2" value="𝑥 - a" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CuldGSnMmpijeKUYHdOZ-3" value="h" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CuldGSnMmpijeKUYHdOZ-4" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="CuldGSnMmpijeKUYHdOZ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="370" as="sourcePoint" />
+            <mxPoint x="440" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,9 +1,7 @@
 <?php
-    function add(&$x, $val) {
-        $x += $val;
-    }
+    $x = 'Hola';
 
-    $x = 8;
-    add($x, 2);
-    print($x);  // 10
+    for ($i=0; $i<strlen($x); $i++) {
+        print("$x[$i] ");
+    }
 ?>

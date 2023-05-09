@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2023-05-05T10:41:42.334Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="0GCz0CYsW-WqNefVtM06" version="21.2.1" type="device">
+  <diagram name="Page-1" id="_jPdIYTCGIfzG1zV1WSS">
+    <mxGraphModel dx="545" dy="415" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q2cdReAOAa14ePflZC_5-3" value="X-M" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q2cdReAOAa14ePflZC_5-4" value="σ&lt;span class=&quot;katex&quot;&gt;&lt;/span&gt;&lt;span class=&quot;katex&quot;&gt;&lt;/span&gt;&lt;span class=&quot;katex&quot;&gt;&lt;/span&gt;&lt;span class=&quot;katex&quot;&gt;&lt;/span&gt;&lt;span class=&quot;katex&quot;&gt;&lt;/span&gt;&lt;span class=&quot;katex&quot;&gt;&lt;/span&gt;&lt;span class=&quot;katex&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q2cdReAOAa14ePflZC_5-5" value="Z =" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="180" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="q2cdReAOAa14ePflZC_5-6" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.982;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" edge="1" parent="1" source="q2cdReAOAa14ePflZC_5-4" target="q2cdReAOAa14ePflZC_5-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="230" as="sourcePoint" />
+            <mxPoint x="350" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q2cdReAOAa14ePflZC_5-8" value="mew, ie mean" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=15;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="359" y="170" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q2cdReAOAa14ePflZC_5-9" value="" style="endArrow=open;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;" edge="1" parent="1" source="q2cdReAOAa14ePflZC_5-8" target="q2cdReAOAa14ePflZC_5-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="120" as="sourcePoint" />
+            <mxPoint x="300" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q2cdReAOAa14ePflZC_5-10" value="sigma, ie SD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=15;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=bottom;align=left;" vertex="1" parent="1">
+          <mxGeometry x="359" y="210" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q2cdReAOAa14ePflZC_5-11" value="" style="endArrow=open;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;" edge="1" parent="1" source="q2cdReAOAa14ePflZC_5-10" target="q2cdReAOAa14ePflZC_5-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="230" as="sourcePoint" />
+            <mxPoint x="300" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
