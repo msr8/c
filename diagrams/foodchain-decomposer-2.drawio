@@ -1,0 +1,25 @@
+<mxfile host="Electron" modified="2023-05-11T10:56:14.998Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="U1KgkpFqzWp3G3oKTC_o" version="21.2.8" type="device">
+  <diagram name="Page-1" id="KZy_sp_ZRDAk0zEM5HOW">
+    <mxGraphModel dx="763" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RI5fBidj56ngeNTLCUzR-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=open;endFill=0;" edge="1" parent="1" source="RI5fBidj56ngeNTLCUzR-1" target="RI5fBidj56ngeNTLCUzR-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RI5fBidj56ngeNTLCUzR-1" value="Organic matter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RI5fBidj56ngeNTLCUzR-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=open;endFill=0;" edge="1" parent="1" source="RI5fBidj56ngeNTLCUzR-2" target="RI5fBidj56ngeNTLCUzR-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RI5fBidj56ngeNTLCUzR-2" value="Rotifers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="80" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RI5fBidj56ngeNTLCUzR-3" value="Bacteria" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="140" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,75 @@
+<mxfile host="Electron" modified="2023-05-11T10:49:00.425Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="RjQ4K9Ue6sEqrEVL5WfS" version="21.2.8" type="device">
+  <diagram name="Page-1" id="ffn6VcOzL2VB4h3QWJA3">
+    <mxGraphModel dx="1122" dy="855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M6-_sbibOWAL_wFPbT3f-1" target="M6-_sbibOWAL_wFPbT3f-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-1" value="Grass" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="120" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M6-_sbibOWAL_wFPbT3f-2" target="M6-_sbibOWAL_wFPbT3f-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-2" value="Cricket" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M6-_sbibOWAL_wFPbT3f-3" target="M6-_sbibOWAL_wFPbT3f-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-3" value="Rat" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-5" value="Snake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-18" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M6-_sbibOWAL_wFPbT3f-9" target="M6-_sbibOWAL_wFPbT3f-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-9" value="(Herbivores)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=20;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-19" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M6-_sbibOWAL_wFPbT3f-10" target="M6-_sbibOWAL_wFPbT3f-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-10" value="(Omnivores)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=20;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="M6-_sbibOWAL_wFPbT3f-11" target="M6-_sbibOWAL_wFPbT3f-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-11" value="(Omnivores)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=20;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="585" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-12" value="(Producer)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=20;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="55" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-13" value="(Primary)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=20;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-14" value="(Secondary)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=20;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-15" value="(Tertiary)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=20;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="585" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.925;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="M6-_sbibOWAL_wFPbT3f-16" target="M6-_sbibOWAL_wFPbT3f-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-22" value="Nutrients" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comfortaa;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DComfortaa;fontSize=15;" vertex="1" connectable="0" parent="M6-_sbibOWAL_wFPbT3f-21">
+          <mxGeometry x="-0.1033" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-16" value="Mushroom" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="254" y="270" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M6-_sbibOWAL_wFPbT3f-17" value="(Decomposer)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=20;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="274" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

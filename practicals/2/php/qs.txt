@@ -7,4 +7,12 @@ Q6)  Write a program to check if a number is odd or even
 Q7)  Write a program to check if a word is a palindrome
 Q8)  Write a program to check if a number is an armstrong number
 Q9)  Write a program to swap two numbers
-Q10) Write a program to find the maximum of given numbers
+Q10) Write a program to find the greatest of 3 numbers
+Q11) Write a program to find the square of a number
+Q12) Write a program to find the sum of the digits of a number
+Q13) Write a program to print the table of a number
+Q14) Write a program to find the factorial of a number
+Q15) Write a program to print the fibonacci series (without using recursion)
+Q16) Write a program to find the reverse of a number
+Q17) Write a program to find the reverse of a string
+Q18) Write a program to print the fibonacci series (using recursion)

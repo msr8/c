@@ -1,0 +1,25 @@
+<mxfile host="Electron" modified="2023-05-11T10:35:19.261Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="HgTmzlU50hf2VimdSSDQ" version="21.2.8" type="device">
+  <diagram name="Page-1" id="gXbvuWTyOdjlrfYu3K4Z">
+    <mxGraphModel dx="795" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VtnF5OqsbEKuwqVvrkEY-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=open;endFill=0;" edge="1" parent="1" source="VtnF5OqsbEKuwqVvrkEY-1" target="VtnF5OqsbEKuwqVvrkEY-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VtnF5OqsbEKuwqVvrkEY-1" value="Insects" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtnF5OqsbEKuwqVvrkEY-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=open;endFill=0;" edge="1" parent="1" source="VtnF5OqsbEKuwqVvrkEY-2" target="VtnF5OqsbEKuwqVvrkEY-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VtnF5OqsbEKuwqVvrkEY-2" value="Fish" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtnF5OqsbEKuwqVvrkEY-3" value="Lion" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontSize=30;fontFamily=Ubuntu Mono;strokeWidth=3;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
