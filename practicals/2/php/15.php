@@ -1,14 +1,16 @@
 <?php
-    $n = intval(readline("Enter a number: "));
-    $num1 = 0;
-    $num2 = 1;
+    function reverse_string($x) {
+        $x_len = strlen($x);
+        $ret   = "";
 
-    $counter = 0;
-    while ($counter < $n){
-        print("$num1 ");
-        $num3 = $num2 + $num1;
-        $num1 = $num2;
-        $num2 = $num3;
-        $counter = $counter + 1;
+        for ($i=0; $i<$x_len; $i++) {
+            $ret[$i] = $x[$x_len-$i-1];
+        }
+        
+        return $ret;
     }
+
+    $x = readline("Enter a string: ");
+
+    print("\nReverse of $x is ".reverse_string($x)."\n");
 ?>

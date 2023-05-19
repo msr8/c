@@ -1,13 +1,13 @@
 <?php
-    function fib($x) {
-        if        ($x==1)          {return 0;}
-        elseif    ($x==1 or $x==2) {return 1;}
-        else                       {return fib($x-1) + fib($x-2);}
+    $x = intval(readline("Enter a year: "));
+    $is_leap = false;
+
+    if ($x%4==0) {
+        if     ($x%100!=0)    {$is_leap = true;}
+        elseif ($x%400==0)    {$is_leap = true;}
     }
 
-    $x = intval(readline("Enter a number: "));
-
-    for($i=1; $i<=$x; $i++) {
-        print(fib($i)." ");
-    }
+    print("$x is ");
+    if (!$is_leap) {print("not ");}
+    print("a leap year\n");
 ?>

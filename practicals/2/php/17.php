@@ -1,5 +1,6 @@
 <?php
-    $x = readline("Enter a string: ");
+    $l = intval(readline("Enter the length of the rectangle: "));
+    $h = intval(readline("Enter the height of the rectangle: "));
 
-    print("\nReverse of $x is ".strrev($x)."\n");
+    print("\nArea of the rectangle  is ".($l*$h)."sq. units\n");
 ?>

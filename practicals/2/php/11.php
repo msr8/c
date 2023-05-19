@@ -1,4 +1,7 @@
 <?php
-    $x = intval(readline("Enter a number: "));
-    print("\nSquare of $x is ".($x*$x)."\n");
+    $x = readline("Enter a number: ");
+    
+    $sum = array_sum(str_split($x));
+
+    print("\nSum of the digits of $x is $sum\n");
 ?>

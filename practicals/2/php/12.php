@@ -1,7 +1,10 @@
 <?php
-    $x = readline("Enter a number: ");
-    
-    $sum = array_sum(str_split($x));
+    function factorial($x) {
+        if ($x==1 or $x==2) {return $x;}
+        else                {return $x * factorial($x-1);}
+    }
 
-    print("\nSum of the digits of $x is $sum\n");
+    $x = readline("Enter a number: ");
+
+    print("\nFactorial of $x is ".factorial($x)."\n");
 ?>
