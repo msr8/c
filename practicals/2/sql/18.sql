@@ -1,3 +1,4 @@
+USE online_book;
 -- Visually convert all the books' titles to lower case
 SELECT LOWER(book_title) FROM book;
 -- Visually convert all the books' titles to upper case

@@ -31,4 +31,5 @@ Minus).
 24. Demonstrate the use of Join Operations (Outer Join)
 
 
-
+-- 7 & 11 same
+-- 14 & 18 same

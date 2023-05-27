@@ -23,3 +23,6 @@ Q22) Write a program to convert temperature from celsius to fahrenheit
 Q23) Write a program to calculate simple interest and compound interest
 Q24) Write a program to create all the different types of arrays
 Q25) Write a program to show wether the entered input is a letter, digit, or none
+
+// 5 times hit +
+

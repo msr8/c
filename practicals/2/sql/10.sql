@@ -1,3 +1,4 @@
+USE online_book;
 -- Get information of fantasy and thriller books
 SELECT * FROM book where category='fantasy' OR  category='thriller';
 -- Get information of fantasy books costing more than 800
