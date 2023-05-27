@@ -1,0 +1,34 @@
+1. Introduction to MS Access, Create tables, forms, and reports
+in MS Access
+2. Introduction to SQL, Characteristics of SQL & its Advantages
+3. SQL Command Types (DDL, DML, DCL & TCL).
+4. SQL Datatypes.
+5. Create Online Book Database with the following tables: -
+6. Insert five meaningful records in each above tables.
+7. Demonstrate the use of SELECT Command with the use of
+WHERE clause.
+8. Demonstrate the use of ALTER TABLE Command.
+9. Define TRUNCATE Command, and DROP Command.
+10. Demonstrate the use of Logical operators.
+11. Demonstrate the use of Comparison operators.
+12. Demonstrate the use of ORDER BY Keyword.
+13. Demonstrate the use of UPDATE Command, and DELETE
+Command with WHERE Clause.
+14. Demonstrate the use of LIKE Operator. String operations.
+15. Demonstrate the use of Aggregate Functions.
+16. Demonstrate the use of Date & Time and Version Function
+etc.
+17. Demonstrate the use of Numeric functions.
+18. Demonstrate the use of String functions.
+19. Demonstrate the use of Group by Clause and Having
+clause.
+20. Demonstrate the use of selecting records using NULL and
+NOT NULL values.
+21. Add constraints to the columns in the already created tables.
+22. Demonstrate the use of Set Operators (Union, Intersect,
+Minus).
+23. Demonstrate the use of Join Operations (Inner Join).
+24. Demonstrate the use of Join Operations (Outer Join)
+
+
+

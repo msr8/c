@@ -38,6 +38,9 @@ CREATE TABLE review (
 DESC review;
 
 
+
+
+
 USE online_book;
 
 -- Book
@@ -76,38 +79,33 @@ SELECT * FROM review;
 
 
 
-USE online_book;
--- Get the ISBN, title, and price of all the books whose price is greater than 600
-SELECT isbn,book_title,price FROM book WHERE price>600;
--- Get all the information about the books of the "fantasy" category
-SELECT * FROM book where category='fantasy';
--- Get all the information about the publishers operating from California
-SELECT * FROM publisher WHERE address LIKE '%CA %';
--- Get author name using their email
-SELECT name FROM author where email='benjamin.taylor@gmail.com';
--- Get all the information of the ratings above or equal to 3
-SELECT * FROM review WHERE rating>=3;
-
-
-
-
-
+-- 8.sql
 USE online_book;
 -- Add a column
-ALTER TABLE book ADD author_name varchar(30);
+ALTER TABLE book ADD publisher varchar(10);
 -- Rename a column
-ALTER TABLE book RENAME COLUMN author_name TO author;
+ALTER TABLE book RENAME COLUMN publisher TO p_id;
 -- Change datatype of a column
-ALTER TABLE book MODIFY COLUMN author VARCHAR(50);
+ALTER TABLE book MODIFY COLUMN p_id VARCHAR(5);
 -- Remove a column
 ALTER TABLE book DROP COLUMN year_of_publishing;
 -- Set a column to be the primary key
-ALTER TABLE book ADD PRIMARY KEY(ISBN);
+ALTER TABLE book ADD PRIMARY KEY(isbn);
 -- Remove the primary key
 ALTER TABLE book DROP PRIMARY KEY;
--- Set a column to be the foreign key
-ALTER TABLE review ADD FOREIGN KEY(ISBN) REFERENCES book(ISBN);
--- Remove a foreign key
-ALTER TABLE book DROP FOREIGN KEY ISBN;
+DESC book;
+
+
+
+
+
+-- 13.sql
+-- Delete the record of the P5 publisher from the author table
+DELETE FROM publisher WHERE p_id="P5";
+-- Add p_id to books
+UPDATE book SET p_id="P1" WHERE isbn="1133820410";
+UPDATE book SET p_id="P3" WHERE isbn IN ("3140866387","1674916338");
+UPDATE book SET p_id="P2" WHERE isbn="9057777720";
+SELECT * FROM book;
 
 
