@@ -10,4 +10,5 @@
     for($i=1; $i<=$x; $i++) {
         print(fib($i)." ");
     }
+    print("\n");
 ?>

@@ -7,5 +7,5 @@
     $a   = $b;
     $b   = $tmp;
     
-    print("\n\$a: $a | \$b: $b");
+    print("\n\$a: $a | \$b: $b\n");
 ?>

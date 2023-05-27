@@ -11,4 +11,5 @@
         $num2 = $num3;
         $counter = $counter + 1;
     }
+    print("\n");
 ?>

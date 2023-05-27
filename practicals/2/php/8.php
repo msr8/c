@@ -2,7 +2,7 @@
     function is_armstrong($x) {
         $x_str = strval($x);
         $sum = 0;
-        foreach ($x_str as $i){
+        foreach (str_split($x_str) as $i){
             $sum += intval($i) ** 3;
         }
         return $x == $sum;
@@ -12,5 +12,5 @@
     
     print("$x is ");
     if (!is_armstrong($x)) {print("not ");}
-    print("an armstrong number");
+    print("an armstrong number\n");
 ?>

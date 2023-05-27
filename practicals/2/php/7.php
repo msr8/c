@@ -3,5 +3,5 @@
     
     print("$x is ");
     if ($x != strrev($x)) {print("not ");}
-    print("a palindrome");
+    print("a palindrome\n");
 ?>
