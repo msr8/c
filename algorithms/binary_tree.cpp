@@ -62,35 +62,6 @@ int main() {
     struct Node *nM = (struct Node*) malloc( sizeof(struct Node) );
     struct Node *nN = (struct Node*) malloc( sizeof(struct Node) );
 
-    nA->right = NULL;
-    nB->right = NULL;
-    nC->right = NULL;
-    nD->right = NULL;
-    nE->right = NULL;
-    nF->right = NULL;
-    nG->right = NULL;
-    nH->right = NULL;
-    nI->right = NULL;
-    nJ->right = NULL;
-    nK->right = NULL;
-    nL->right = NULL;
-    nM->right = NULL;
-    nN->right = NULL;
-
-    nA->left = NULL;
-    nB->left = NULL;
-    nC->left = NULL;
-    nD->left = NULL;
-    nE->left = NULL;
-    nF->left = NULL;
-    nG->left = NULL;
-    nH->left = NULL;
-    nI->left = NULL;
-    nJ->left = NULL;
-    nK->left = NULL;
-    nL->left = NULL;
-    nM->left = NULL;
-    nN->left = NULL;
 
     nA->data = 'A';
     nB->data = 'B';
@@ -110,11 +81,14 @@ int main() {
     nA->left  = nB;
     nA->right = nG;
     nB->right = nC;
+    nB->left  = NULL;
     nC->left  = nD;
+    nC->right = NULL;
     nD->left  = nE;
     nD->right = nF;
     nG->left  = nH;
     nG->right = nN;
+    nH->left  = NULL;
     nH->right = nI;
     nI->left  = nJ;
     nI->right = nK;
