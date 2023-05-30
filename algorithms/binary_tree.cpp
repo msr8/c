@@ -35,6 +35,11 @@ void printNode(struct Node* node) {
 }
 
 
+void printTree(struct BinaryTree *tree) {
+    printNode(tree->root);
+}
+
+
 
 
 
@@ -119,7 +124,8 @@ int main() {
     struct BinaryTree *tree =  (struct BinaryTree*) malloc( sizeof(struct BinaryTree) );
     tree->root = nA;
 
-    printNode(tree->root);
+    printTree(tree);
+
 
 
 
