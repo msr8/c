@@ -139,6 +139,14 @@ INSERT INTO book2 VALUES ("6581697619", "To Kill a Mockingbird", "Thriller", "60
 
 
 
+
+
+-- 29.sql
+-- Drop the primary key in author table
+ALTER TABLE author DROP PRIMARY KEY;
+
+
+
 -- 5 times hit +
 -- drop database online_book; source /Users/mark/school/practicals/2/sql/all.sql;
 

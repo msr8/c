@@ -13,10 +13,13 @@
         }
     }
 
+    class Apple extends Fruit {
+        function introduce() {
+            print("Hello, I am a ".$this->color." ".$this->name."\n");
+        }
+    }
 
-    $apple = new Fruit("Apple", "Red");
 
-    print("Name:  $apple->name\n");
-    print("Color: $apple->color\n");
-    print("Program execution complete\n");
+    $obj = new Apple("apple", "red");
+    $obj->introduce();
 ?>

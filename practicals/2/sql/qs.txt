@@ -30,6 +30,11 @@ Minus).
 23. Demonstrate the use of Join Operations (Inner Join).
 24. Demonstrate the use of Join Operations (Outer Join)
 
+27. Demonstrate the use of Views.
+28. Demonstrate the use of Sequences.
+29. Demonstrate the use of Index
+
+
 
 -- 7 & 11 same
 -- 14 & 18 same
