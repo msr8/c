@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <struct.h>
 #define SIZE 100
 
 
@@ -69,9 +68,10 @@ int main() {
     display(&s);
     pop(&s);
     display(&s);
+    pop(&s);
+    display(&s);
 
     printf("\n");
 }
-
 
 
