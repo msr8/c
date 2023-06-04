@@ -135,7 +135,7 @@ wise. At the end of the day, the count is generated from the
 stack. Construct a menu-based program for patients' coupons
 generator using an appropriate data structure.
 
-33. WAP to impleme nt Binary Search Tree (BST) with the
+33. WAP to implement Binary Search Tree (BST) with the
 following functions-
 1. Insert a node in BST
 2. Delete a node from BST

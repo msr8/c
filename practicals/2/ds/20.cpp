@@ -1,99 +1,91 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-
-struct Node {
-    char  name[30];
-    int   roll_no;
-    int   marks[5];
-    float avg;
-    bool  is_pass;
-    struct Node* next;
-
+struct Student {
+    char name[50];
+    int rollno;
+    int marks[5];
+    float average;
+    char result[10];
+    struct Student* next;
 };
 
-struct SinglyLinkedList {
-    struct Node* head;
-};
+// Function to create a new student node
+struct Student* createStudent(char name[], int rollno, int marks[]) {
+    struct Student* newStudent = (struct Student*)malloc(sizeof(struct Student));
+    strcpy(newStudent->name, name);
+    newStudent->rollno = rollno;
+    memcpy(newStudent->marks, marks, sizeof(newStudent->marks));
 
+    // Calculate the average
+    int totalMarks = 0;
+    for (int i = 0; i < 5; i++) {
+        totalMarks += marks[i];
+    }
+    newStudent->average = (float)totalMarks / 5;
 
+    // Set the result
+    if (newStudent->average < 50) {
+        strcpy(newStudent->result, "Fail");
+    } else {
+        strcpy(newStudent->result, "Pass");
+    }
 
-void initialiseList(struct SinglyLinkedList* list) {
-    list->head = NULL;
+    newStudent->next = NULL;
+
+    return newStudent;
 }
 
-
-
-void printList(struct SinglyLinkedList* list) {
-    // If list is empty
-    if (list->head == NULL) {
-        printf("[]\n");
-    }
-    
-    // Else, loop thro the nodes
-    else {
-        struct Node* currnode;
-        printf("[");
-        // Gets the first node
-        currnode = list->head;
-    
-        // While it isnt the last node, keep printing its data and going to next node
-        while (currnode->next != NULL)    {
-            printf("%d, ", currnode->data);
-            currnode = currnode->next;
+// Function to insert a student at the end of the linked list
+void insertStudent(struct Student** head, struct Student* newStudent) {
+    if (*head == NULL) {
+        *head = newStudent;
+    } else {
+        struct Student* current = *head;
+        while (current->next != NULL) {
+            current = current->next;
         }
-
-        // Once the last node is reached, print the data and close the array
-        printf("%d]\n", currnode->data);
+        current->next = newStudent;
     }
 }
 
-
-
-void appendToEnd(struct SinglyLinkedList* list, struct Node* node) {
-    // Allocates memory to new node
-    node->next        = NULL;
-
-    // Checks if list is empty. If it is, tells head to point to node
-    if (list->head == NULL) {
-        list->head = node;
-        return;
+// Function to display the student database
+void displayStudents(struct Student* head) {
+    struct Student* current = head;
+    while (current != NULL) {
+        printf("Name: %s\n", current->name);
+        printf("Roll No: %d\n", current->rollno);
+        printf("Marks: ");
+        for (int i = 0; i < 5; i++) {
+            printf("%d ", current->marks[i]);
+        }
+        printf("\n");
+        printf("Average: %.2f\n", current->average);
+        printf("Result: %s\n", current->result);
+        printf("--------------------\n");
+        current = current->next;
     }
-    // Else, loop thro the nodes
-    // Gets the first node
-    struct Node* currnode = list->head;
-    // While it isnt the last node, keep going to next node
-    while (currnode->next != NULL)    {currnode = currnode->next;}
-    // Once the last node is reached, tell it to point to node
-    currnode->next = node;
 }
-
-
-
-
-
 
 int main() {
-    struct SinglyLinkedList list;
-    int  chc;
-    int  roll_no;
-    int  marks[5];
-    char name[30];
-    int  avg;
+    struct Student* head = NULL;
 
-    printf("What would you like to do?\n");
-    printf("1) Insert the record of a student\n");
-    printf("2) Delete the record of a student\n");
-    printf("3) View the record of a student\n");
-    scanf("%d", &chc);
+    // Creating and inserting students
+    int marks1[] = {75, 80, 85, 90, 92};
+    struct Student* student1 = createStudent("John", 1, marks1);
+    insertStudent(&head, student1);
 
-    if (chc == 1) {
-        
-    //         char  name[20];
-    // int   roll_no;
-    // int   marks[5];
-    }
+    int marks2[] = {65, 70, 75, 80, 82};
+    struct Student* student2 = createStudent("Emily", 2, marks2);
+    insertStudent(&head, student2);
 
+    int marks3[] = {55, 60, 65, 70, 72};
+    struct Student* student3 = createStudent("David", 3, marks3);
+    insertStudent(&head, student3);
+
+    // Displaying the student database
+    displayStudents(head);
 
     printf("\n");
 }

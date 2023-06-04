@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 
-int max(int *arr, int arr_len) {
-    int res = arr[0];
+int min(int *arr, int arr_len) {
+    int res     = arr[0];
 
     for (int i=0; i<arr_len; i++) {
-        if (arr[i] > res)    {res = arr[i];}
+        if (arr[i] < res)    {res = arr[i];}
     }
 
     return res;
@@ -29,7 +29,7 @@ int main() {
     }
 
     printf("\n");
-    printf("From the given array, the largest element is %d\n", max(arr, n));
+    printf("From the given array, the smallest element is %d\n", min(arr, n));
 
     printf("\n");
 }
