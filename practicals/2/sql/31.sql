@@ -4,10 +4,10 @@ USE online_book;
 DELIMITER ##
 CREATE PROCEDURE p1()
 BEGIN
-desc book;
-desc author;
-desc publisher;
-desc review;
+    DESC book;
+    DESC author;
+    DESC publisher;
+    DESC review;
 END ##
 DELIMITER ;
 -- Calls the procedure

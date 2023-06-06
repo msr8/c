@@ -29,21 +29,20 @@ NOT NULL values.
 Minus).
 23. Demonstrate the use of Join Operations (Inner Join).
 24. Demonstrate the use of Join Operations (Outer Join)
-
+25. Demonstrate the use of ON UPDATE and ON DELETE CASCADE
 26. Demonstrate the use of NESTED QUERIES. QUERY with various operators ANY, ALL, EXISTS, NOT EXISTS, IN
 27. Demonstrate the use of Views.
 28. Demonstrate the use of Sequences.
 29. Demonstrate the use of Index
 30. Demonstrate the use of Triggers.
 31. Demonstrate the use of the Stored Procedure
-32. Demonstrate the use of TCL Commands.
-33. Queries based on Operators, Pattern matching, Order by, Drop & Alter command.
-34. Queries based on Aggregate functions, Group by and having clause.
-35. Queries based on Join Operations.
-36. Queries based on Nested Queries.
-37. Queries based on Views.
-38. Practice Questions
+32. Queries based on Operators, Pattern matching, Order by, Drop & Alter command.
+33. Queries based on Aggregate functions, Group by and having clause.
+34. Queries based on Join Operations.
+35. Queries based on Nested Queries.
+36. Queries based on Views.
 
 
 -- 7 & 11 same
 -- 14 & 18 same
+-- 25,26

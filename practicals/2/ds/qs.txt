@@ -1,8 +1,6 @@
-1. WAP to Find the largest element in an array using
-Functions
+1. WAP to Find the largest element in an array using functions
 
-2. WAP to Find the smallest element in an array using
-Functions
+2. WAP to Find the smallest element in an array using functions
 
 3. WAP to Insert an element at a particular location in an
 existing array.
@@ -143,5 +141,4 @@ following functions-
 4. POSTORDER Traversal
 5. PREORDER Traversal
 
-34. WAP to implement an expression tree. (For example:
-(a+b/(c*d)-e)
+34. WAP to implement an expression tree. (For example: (a+b/(c*d)-e)

@@ -10,7 +10,6 @@ CREATE TABLE book (
     Year_of_Publishing  YEAR,
     Page_count          INT(5)
 );
-DESC book;
 
 CREATE TABLE publisher (
     P_ID                 VARCHAR(10),
@@ -19,7 +18,6 @@ CREATE TABLE publisher (
     Phone_no             VARCHAR(10),
     Email_ID             VARCHAR(30)
 );
-DESC publisher;
 
 CREATE TABLE author (
     A_ID     VARCHAR(10),
@@ -28,14 +26,12 @@ CREATE TABLE author (
     phone    VARCHAR(10),
     email    VARCHAR(30)
 );
-DESC author;
 
 CREATE TABLE review (
     R_ID    VARCHAR(10),
     ISBN    VARCHAR(10),
     Rating  INT(1)
 );
-DESC review;
 
 
 
@@ -49,7 +45,6 @@ INSERT INTO book VALUES ('1674916338', 'Harry Potter',         'Fantasy',   700,
                         ('9057777720', 'Sherlock Holmes',      'Mystery',   800, '2004-01-19', 2004, 321),
                         ('7428714265', 'Bridge to Terabithia', 'Fiction',   300, '2011-07-17', 2012, 355),
                         ('1133820410', 'Game of Thrones',      'Fantasy',   900, '2012-08-23', 2013, 139);
-SELECT * FROM book;
 
 -- Publisher
 INSERT INTO publisher VALUES ('P1', 'Swift Publishing',      '1234 Maple Avenue, Los Angeles, CA 90001',     '9876543210', 'swiftpublishing@gmail.com'),
@@ -57,7 +52,6 @@ INSERT INTO publisher VALUES ('P1', 'Swift Publishing',      '1234 Maple Avenue,
                              ('P3', 'Golden Pen Publishing', '7890 Pine Drive, Unit 12, Chicago, IL 60603',  '7654321098', 'goldenpenpublishing@gmail.com'),
                              ('P4', 'Moonbeam Books',        '4321 Cedar Lane, Boston, MA 02108',            '6543210987', 'moonbeambooks@gmail.com'),
                              ('P5', 'Starry Sky Press',      '1234 Birch Road, San Francisco, CA 94109',     '5432109876', 'starryskypress@gmail.com');
-SELECT * FROM publisher;
 
 -- Author
 INSERT INTO author VALUES ('A1', 'Ethan Lee',       '5678 Elm St, Apt 3D, Houston, TX',   '9876543210', 'ethan.lee@gmail.com'),
@@ -65,7 +59,6 @@ INSERT INTO author VALUES ('A1', 'Ethan Lee',       '5678 Elm St, Apt 3D, Housto
                           ('A3', 'Amelia Wilson',   '7890 Cedar Ln, Chicago, IL',         '9876012345', 'amelia.wilson@gmail.com'),
                           ('A4', 'Benjamin Taylor', '4321 Maple Dr, San Francisco, CA',   '9876987654', 'benjamin.taylor@gmail.com'),
                           ('A5', 'Mia Anderson',    '8765 Pine Rd, Apt 9C, New York, NY', '9876098765', 'mia.anderson@gmail.com');
-SELECT * FROM author;
 
 -- Review
 INSERT INTO review VALUES ('R1', 9057777720, 3),
@@ -73,7 +66,6 @@ INSERT INTO review VALUES ('R1', 9057777720, 3),
                           ('R3', 1674916338, 2),
                           ('R4', 7428714265, 4),
                           ('R5', 3140866387, 1);
-SELECT * FROM review;
 
 
 
@@ -93,7 +85,6 @@ ALTER TABLE book DROP COLUMN year_of_publishing;
 ALTER TABLE book ADD PRIMARY KEY(isbn);
 -- Remove the primary key
 ALTER TABLE book DROP PRIMARY KEY;
-DESC book;
 
 
 
@@ -106,16 +97,16 @@ DELETE FROM publisher WHERE p_id="P5";
 UPDATE book SET p_id="P1" WHERE isbn="1133820410";
 UPDATE book SET p_id="P3" WHERE isbn IN ("3140866387","1674916338");
 UPDATE book SET p_id="P2" WHERE isbn="9057777720";
-SELECT * FROM book;
 
 
 
 
 
 -- 21.sql
+SET FOREIGN_KEY_CHECKS=0;
 -- Add primary keys
 ALTER TABLE book      ADD CONSTRAINT pk_isbn PRIMARY KEY(isbn);
-ALTER TABLE review    ADD CONSTRAINT pk_isbn PRIMARY KEY(isbn);
+ALTER TABLE review    ADD CONSTRAINT pk_r_id PRIMARY KEY(r_id);
 ALTER TABLE publisher ADD CONSTRAINT pk_p_id PRIMARY KEY(p_id);
 ALTER TABLE author    ADD CONSTRAINT pk_a_id PRIMARY KEY(a_id);
 -- Add foreign keys
@@ -140,10 +131,34 @@ INSERT INTO book2 VALUES ("6581697619", "To Kill a Mockingbird", "Thriller", "60
 
 
 
+-- -- 25.sql
+-- -- Create tables
+-- CREATE TABLE orders (
+--     order_id INT PRIMARY KEY,
+--     order_date DATE
+-- );
+-- CREATE TABLE order_items (
+--     item_id INT PRIMARY KEY,
+--     order_id INT,
+--     item_name VARCHAR(50),
+--     FOREIGN KEY (order_id) REFERENCES orders(order_id) ON UPDATE CASCADE ON DELETE CASCADE
+-- );
+
+
+
+
 
 -- 29.sql
 -- Drop the primary key in author table
 ALTER TABLE author DROP PRIMARY KEY;
+
+
+
+
+-- 30.sql
+-- Adds a sale column
+ALTER TABLE book2 ADD COLUMN sale DECIMAL(10, 2);
+
 
 
 
