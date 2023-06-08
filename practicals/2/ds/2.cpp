@@ -3,7 +3,7 @@
 
 
 int min(int *arr, int arr_len) {
-    int res     = arr[0];
+    int res = arr[0];
 
     for (int i=0; i<arr_len; i++) {
         if (arr[i] < res)    {res = arr[i];}
