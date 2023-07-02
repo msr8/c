@@ -69,6 +69,8 @@ questions = {
     30: 'WAP to implement DEQUE using Arrays',
     31: 'WAP to implement DEQUE using Linked List',
     32: "Let us assume a Patient's coupon generator for the Doctors' clinic. The patients are given the coupons on first-come-first- serve basis. After the visit of a patient, patient-ID is kept stack- wise. At the end of the day, the count is generated from the stack. Construct a menu-based program for patients' coupons generator using an appropriate data structure",
+    33: "WAP to implement Binary Search Tree (BST) with the\nfollowing functions-\n1. Insert a node in BST\n2. Delete a node from BST\n3. INORDER Traversal\n4. POSTORDER Traversal\n5. PREORDER Traversal",
+    34: "WAP to implement an expression tree. (For example: (a+b/(c*d)-e)"
 }
 md_gen(template, questions)
 
