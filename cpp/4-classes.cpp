@@ -4,14 +4,16 @@ using namespace std;
 
 
 class Point {
-    public:           // Access specifier
-        int x, y, z;  // Attributes
-
-        // Method 1
-        string toString() {
-            return "(" + to_string(x) + "," + to_string(y) + "," + to_string(z) + ")";
-        }
+    public:                // Access specifier
+        int x, y, z;       // Data members (attributes)
+        string toString(); // Prototype of a member function (method)
 };
+
+string Point::toString() {
+    return "(" + to_string(x) + "," + to_string(y) + "," + to_string(z) + ")";
+}
+
+
 
 
 class PointWithConstructor {
@@ -29,6 +31,8 @@ class PointWithConstructor {
             return "(" + to_string(x) + "," + to_string(y) + "," + to_string(z) + ")";
         }
 };
+
+
 
 
 int main() {
