@@ -1,15 +1,41 @@
-# Create a dictionary whose keys are month names and whose values are the number of days in the corresponding months
-dic = {
-    'january':   31,
-    'february':  28,
-    'march':     31,
-    'april':     30,
-    'may':       31,
-    'june':      30,
-    'july':      31,
-    'august':    31,
-    'september': 30,
-    'october':   31,
-    'november':  30,
-    'december':  31
-}
+import pandas as pd
+
+def read_csv() -> pd.DataFrame:
+    try:
+        df = pd.read_csv('users.csv')
+        return df
+    except FileNotFoundError:
+        return pd.DataFrame(columns=['username', 'password'])
+
+
+def create(username, password) -> None:
+    df = read_csv()
+
+    # If username already exists, update the password
+    if username in df['username'].values:
+        cond = df['username'] == username
+        df.loc[cond, 'password'] = password
+    # Else, add a new row
+    else:
+        new_row = pd.DataFrame( [[username, password]] , columns=['username', 'password'] )
+        df      = pd.concat( [df, new_row] )
+    
+    df.to_csv('users.csv', index=False)
+
+
+
+def search(username) -> None | dict[str,str]:
+    df   = read_csv()
+    # If username does not exist, return None
+    if username not in df['username'].values:
+        return None
+    # Else, return the user's data
+    cond = df['username'] == username
+    return df[cond].to_dict('records')[0]
+
+
+
+create('mark', '17j')
+search('mark')
+create('mark', '18j')
+search('mark')
