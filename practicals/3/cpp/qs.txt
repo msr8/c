@@ -1,0 +1,102 @@
+1. WAP to demonstrate the use of function overloading for calculating area of square, rectangle, circle, and triangle (without class)
+
+2. WAP to implement Inline function
+
+3. WAP to store and display the details of a student using a structure
+
+4. WAP to demonstrate the concept of nesting a member function
+
+5. WAP to implement call by reference and return by reference using class [Hint: Assume necessary functions]
+
+6. WAP to demonstrate the use of static data member and static member function accessing a static variable with help of a class.
+
+7. WAP to demonstrate the use of array of objects.
+
+8. WAP to add two time objects where the data members are hours, minutes, seconds make use of validation check while entering the time.
+
+9. WAP that uses a friend function to swap the contents of the private data members of two classes.
+
+10. WAP to demonstrate concept of friend class.
+
+11. WAP where you have two classes, “first” and “second”, each class has one integer value as its data member. Class “first” is a friend class of class “second” and vice versa. WAP to input values of both data members through member functions of 1st class display both the values through member function of 2nd class.
+
+12. WAP to demonstrate the use of return by reference in a function.
+
+13. WAP to create a class for two complex numbers. Show addition and subtraction of two complex numbers using appropriate functions.
+
+14. WAP to demonstrate overloading of default, parameterized and copy constructor by creating a suitable class.
+
+15. WAP to demonstrate the concept of dynamic initialization using fixed deposit class having appropriate members.
+
+16. WAP to show the object at different nesting levels so as to demonstrate the invoking of constructors and destructors.
+
+17. WAP to demonstrate the concept of inheritance by using the public visibility mode.
+
+18. WAP to demonstrate the concept of inheritance by using the private visibility mode.
+19. WAP to demonstrate the concept of ambiguity resolution in multilevel
+inheritance (function overloading).
+20. WAP to demonstrate the concept of function overloading by using classes.
+21. WAP to demonstrate the concept of virtual base class.
+22. WAP to demonstrate the concept of declaration list followed by argument
+list followed by initialization list.
+23. WAP to create and destroy object dynamically.
+24. WAP to demonstrate the concept of runtime polymorphism through virtual
+functions.
+25. WAP to demonstrate the concept of runtime polymorphism through class
+
+media.
+26. WAP to demonstrate the concept of dynamic constructor using strings.
+27. WAP to overload +, - operators for complex number classes.
+28. WAP to overload the operators +, &gt;, &lt; for a class called string having
+appropriate members.
+29. WAP to overload the operators &gt;&gt; and &lt;&lt; for a class called string having
+appropriate members.
+30. WAP to overload +=, -=, multiple assignment, () using an appropriate class
+31. WAP to demonstrate the use of pure virtual function.
+32. WAP to show the implementation of containership.
+33. WAP to show swapping using template function (Generic).
+34. WAP to implement Exception Handling.
+35. Create two files “Country” and “Capitals”. Read values in both files using
+appropriate functions. Simultaneous read from both files and print
+countries along with their capitals.
+36. Write a program to read numbers in an array. Write the even and odd
+numbers into two different files using command line arguments.
+Application Based Practicals
+
+37. Create a class employee which have name, age and address of employee,
+include functions getdata() and showdata(), getdata() takes the input from
+the user, showdata() display the data in following format:
+Name:
+Age:
+Address:
+38. Write a class called CAccount which contains two private data elements, an
+integer accountNumber and a floating point accountBalance, and three
+member functions:
+ A constructor that allows the user to set initial values for
+accountNumber and accountBalance and a default constructor that
+prompts for the input of the values for the above data numbers.
+ A function called inputTransaction, which reads a character value
+for transactionType(„D‟ for deposit and „W‟ for withdrawal), and a
+floating point value for transactionAmount, which updates
+accountBalance.
+A function called printBalance, which prints on the screen the
+accountNumber and accountBalance.
+39. Define a class Counter which contains an int variable count defined as static
+and a static function Display () to display the value of count. When ever an
+object of this class is created count is incremented by 1. Use this class in
+main to create multiple objects of this class and display value of count each
+time.
+40. WAP to add and subtract two complex numbers using classes.
+41. Write program to overload Binary + to add two similar types of objects.
+(Both with and without using friend functions)
+42. WAP to implement += and -= operator.
+43. Implement the following class hierarchy considering appropriate data
+members and member functions
+
+44. Implement the following hierarchy considering appropriate data members
+and member functions (use Virtual functions).
+
+45. WAP to convert meter to centimeter and vice versa, using data conversions
+and operator overloading
+46. WAP to count digits, alphabets and spaces, stored in a text file, using
+streams.

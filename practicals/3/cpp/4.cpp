@@ -1,25 +1,33 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 
-class Square {
-    public:
-        float x;
-        Square(float x) {this->x = x;}
-        void area(float &area);
-};
+class Operations {
+    int a,b;
 
-void Square::area(float &area) {area = x*x;}
+public:
+    Operations(int x, int y) {
+        a = x;
+        b = y;
+    }
+    int   add()      {return a+b;}
+    int   subtract() {return a-b;}
+    int   multiply() {return a*b;}
+    float divide()   {return (float)a/b;}
+
+    void performOperations() {
+        cout << a << " + " << b << " = " << add() << endl;
+        cout << a << " - " << b << " = " << subtract() << endl;
+        cout << a << " * " << b << " = " << multiply() << endl;
+        cout << a << " / " << b << " = " << divide() << endl;
+    }
+};
 
 
 
 int main() {
-    Square s(5.0f);
-    
-    float area;
-    s.area(area);
-    cout << area;
-    
+    Operations obj = Operations(5, 3);
+    obj.performOperations();
+
     return 0;
 }

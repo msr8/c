@@ -27,6 +27,11 @@ class PointWithConstructor {
             this->z = z;
         }
 
+        // Destructor
+        ~PointWithConstructor() {
+            cout << "PointWithConstructor object destroyed" << endl;
+        }
+
         string toString() {
             return "(" + to_string(x) + "," + to_string(y) + "," + to_string(z) + ")";
         }
