@@ -1,12 +1,44 @@
-# Write a program that inputs a list of numbers and returns the cumulative sum that is, a new list where the (i+1)th ts element is the sum of the
-# first i elements from the original list. For example, the cumulative sum of [1, 2, 3] is [1, 3, 6]
+def method_1_1(orig:list[int]) -> list[int]:
+    new = []
 
-inp       = input('Enter some numbers (separated by space):\n')
-orig_list = [int(i) for i in inp.split()]
-new_list  = []
+    for i in range(len(orig)):
+        sublist = orig[:i+1]
+        total   = 0
+        for j in sublist:
+            total += j
+        new.append(total)
+    
+    return new
 
-for i in range(len(orig_list)):
-    sum_ = sum(orig_list[:i+1])
-    new_list.append(sum_)
 
-print(new_list)
+def method_1_2(orig:list[int]) -> list[int]:
+    new = []
+
+    for i in range(len(orig)):
+        new.append(sum(orig[:i+1]))
+    
+    return new
+
+
+def method_1_3(orig:list[int]) -> list[int]:
+    return [sum(orig[:i+1]) for i in range(len(orig))]
+
+
+
+
+def method_2_1(orig:list[int]) -> list[int]:
+    new = []
+
+    total = 0
+    for i in orig:
+        total += i
+        new.append(total)
+    
+    return new
+
+
+def method_2_2(orig:list[int]) -> list[int]:
+    total = 0
+    return [total := total + i for i in orig]
+
+

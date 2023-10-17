@@ -6,31 +6,38 @@ class second;
 class first {
     int data;
 public:
-    first(int x) {data=x;}
-    void display(second s); // Defining this later because second is "incomplete class"
+    void take_input(second *s);
     friend class second;
 };
 
 class second {
     int data;
 public:
-    second(int x) {data=x;}
-    void display(first f) {
-        cout << "first class data member from inside the second class: " << f.data << endl;
-    };
+    void show_input(first f);
     friend class first;
 };
 
-void first::display(second s) {
-    cout << "second class data member from inside the first class: " << s.data << endl;
-};
+
+void first::take_input(second *s) { // Did *s cause else a COPY of s will be passed
+    int temp_;
+    cout << "Enter the value of the data member of the first class: ";
+    cin >> data;
+    cout << "Enter the value of the data member of the second class: ";
+    cin >> s->data;
+}
+
+void second::show_input(first f) {
+    cout << "Value of data member of the first class:  " << f.data << endl;
+    cout << "Value of data member of the second class: " <<  data << endl;
+}
+
 
 
 
 int main() {
-    first f(10);
-    second s(20);
-    f.display(s);
-    s.display(f);
+    first f;
+    second s;
+    f.take_input(&s);
+    s.show_input(f);
     return 0;
 }
