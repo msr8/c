@@ -22,7 +22,7 @@ void modify_arr(const int *arr, int size) {
 int main() {
     int arr[5] = {1, 2, 3, 4, 5};
     print_arr(arr, 5);
-    // This will not compile:
+    // This will not compile (ie throw an error at compile time):
     modify_arr(arr, 5);
 
     return 0;
