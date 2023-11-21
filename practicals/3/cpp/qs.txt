@@ -33,12 +33,15 @@
 17. WAP to demonstrate the concept of inheritance by using the public visibility mode.
 
 18. WAP to demonstrate the concept of inheritance by using the private visibility mode.
-19. WAP to demonstrate the concept of ambiguity resolution in multilevel
-inheritance (function overloading).
+
+19. WAP to demonstrate the concept of ambiguity resolution in multilevel inheritance (function overloading).
+
 20. WAP to demonstrate the concept of function overloading by using classes.
+
 21. WAP to demonstrate the concept of virtual base class.
-22. WAP to demonstrate the concept of declaration list followed by argument
-list followed by initialization list.
+
+22. WAP to demonstrate the concept of declaration list followed by argument list followed by initialization list.
+
 23. WAP to create and destroy object dynamically.
 24. WAP to demonstrate the concept of runtime polymorphism through virtual
 functions.
