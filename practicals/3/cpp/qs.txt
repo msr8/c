@@ -43,32 +43,34 @@
 22. WAP to demonstrate the concept of declaration list followed by argument list followed by initialization list.
 
 23. WAP to create and destroy object dynamically.
-24. WAP to demonstrate the concept of runtime polymorphism through virtual
-functions.
-25. WAP to demonstrate the concept of runtime polymorphism through class
 
-media.
-26. WAP to demonstrate the concept of dynamic constructor using strings.
-27. WAP to overload +, - operators for complex number classes.
-28. WAP to overload the operators +, &gt;, &lt; for a class called string having
-appropriate members.
-29. WAP to overload the operators &gt;&gt; and &lt;&lt; for a class called string having
-appropriate members.
-30. WAP to overload +=, -=, multiple assignment, () using an appropriate class
+24. WAP to demonstrate the concept of runtime polymorphism through virtual functions
+
+25. WAP to demonstrate the concept of runtime polymorphism through class media
+
+26. WAP to demonstrate the concept of dynamic constructor using strings
+
+27. WAP to overload +, - operators for complex number classes
+
+28. WAP to overload the operators +, >, < for a class called string having appropriate members
+
+29. WAP to overload the operators >> and << for a class called string having appropriate members
+
+30. WAP to overload +=, -=, multiple assignment using an appropriate class
+
 31. WAP to demonstrate the use of pure virtual function.
-32. WAP to show the implementation of containership.
-33. WAP to show swapping using template function (Generic).
-34. WAP to implement Exception Handling.
-35. Create two files “Country” and “Capitals”. Read values in both files using
-appropriate functions. Simultaneous read from both files and print
-countries along with their capitals.
-36. Write a program to read numbers in an array. Write the even and odd
-numbers into two different files using command line arguments.
-Application Based Practicals
 
-37. Create a class employee which have name, age and address of employee,
-include functions getdata() and showdata(), getdata() takes the input from
-the user, showdata() display the data in following format:
+32. WAP to show the implementation of containership.
+
+33. WAP to show swapping using template function (Generic).
+
+34. WAP to implement Exception Handling.
+
+35. Create two files “Country” and “Capitals”. Read values in both files using appropriate functions. Simultaneous read from both files and print countries along with their capitals.
+
+36. Write a program to read numbers in an array. Write the even and odd numbers into two different files using command line arguments
+
+37. Create a class employee which have name, age and address of employee, include functions getdata() and showdata(), getdata() takes the input from the user, showdata() display the data in following format:
 Name:
 Age:
 Address:
