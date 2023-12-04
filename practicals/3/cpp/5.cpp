@@ -5,13 +5,11 @@ using namespace std;
 class Foo {
     int pvt;
 public:
-    // Initialiser/COnstructor
     Foo() {pvt=0;}
     // Call by reference
     void add_10(int& a) {a+=10;}
     // Return by reference
     int& get_pvt() {return pvt;}
-    // Print pvt
     void print_pvt() {cout << "pvt: " << pvt << endl;}
 };
 
