@@ -15,8 +15,8 @@ int sub_assign(int& a, int b) {
 int main() {
     int a = 5;
     int b = 2;
-    cout << a << " += " << b << " = " << add_assign(a,b) << endl;
-    cout << a << " -= " << b << " = " << sub_assign(a,b) << endl;
+    cout << a << " += " << b << " -> " << add_assign(a,b) << endl;
+    cout << a << " -= " << b << " -> " << sub_assign(a,b) << endl;
 
     return 0;
 }

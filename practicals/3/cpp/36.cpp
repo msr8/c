@@ -1,4 +1,3 @@
-// Write a program to read numbers in an array. Write the even and odd numbers into two different files using command line arguments
 #include <iostream>
 using namespace std;
 

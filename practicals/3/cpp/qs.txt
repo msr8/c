@@ -18,7 +18,7 @@
 
 10. WAP to demonstrate concept of friend class
 
-11. WAP where you have two classes, “first” and “second”, each class has one integer value as its data member. Class “first” is a friend class of class “second” and vice versa. WAP to input values of both data members through member functions of 1st class display both the values through member function of 2nd class
+11. WAP where you have two classes, "first" and “second”, each class has one integer value as its data member. Class "first" is a friend class of class "second" and vice versa. WAP to input values of both data members through member functions of 1st class display both the values through member function of 2nd class
 
 12. WAP to demonstrate the use of return by reference in a function
 
@@ -90,7 +90,16 @@ Address:
 
 43. Implement the following class hierarchy considering appropriate data members and member functions
 
+<center>
+
+![q43](https://github.com/msr8/school/blob/main/practicals/3/cpp/assets/43.png?raw=true)</center>
+
 44. Implement the following hierarchy considering appropriate data members and member functions (use Virtual functions)
+
+<center>
+
+
+![q44](https://github.com/msr8/school/blob/main/practicals/3/cpp/assets/44.png?raw=true)</center>
 
 45. WAP to convert meter to centimeter and vice versa, using data conversions and operator overloading
 
