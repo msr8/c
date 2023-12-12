@@ -6,13 +6,13 @@
 
 4. WAP to demonstrate the concept of nesting a member function
 
-5. WAP to implement call by reference and return by reference using class [Hint: Assume necessary functions]
+5. WAP to implement call by reference and return by reference using class
 
 6. WAP to demonstrate the use of static data member and static member function accessing a static variable with help of a class
 
 7. WAP to demonstrate the use of array of objects
 
-8. WAP to add two time objects where the data members are hours, minutes, seconds make use of validation check while entering the time
+8. WAP to add two time objects where the data members are hours, minutes, seconds. Make use of validation check while entering the time
 
 9. WAP that uses a friend function to swap the contents of the private data members of two classes
 

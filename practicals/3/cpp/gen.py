@@ -1,7 +1,7 @@
 from pyperclip import copy as pyperclip_copy
 
 code_dir = '.'
-ss_link  = 'https://github.com/msr8/school/blob/main/practicals/3/cpp/assets/{q_no}.png?raw=true'
+ss_link  = 'https://github.com/msr8/school/blob/main/practicals/3/cpp/screenshots/{q_no}.png?raw=true'
 qs_txt = 'qs.txt'
 ptr = 0
 pagebreak = '<div style="page-break-after: always; visibility: hidden">\pagebreak</div>'
@@ -17,10 +17,9 @@ for index,i in enumerate(qs):
     if not i: continue # If empty line
     if i[0].isdigit():
         # Deal with question
-        q_whole      = ''.join(qs[ptr:index])
+        q_whole      = '\n'.join(qs[ptr:index])
         q_no, *q_txt = q_whole.split('.')
         q_txt        = '.'.join(q_txt)
-        print(q_txt)
         # Update ptr
         ptr = index
         # If no question (happens in the first iteration)
