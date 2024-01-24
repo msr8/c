@@ -22,7 +22,7 @@ public:
 
 class FriendClass {
 public:
-    void friend_func(Foo f) {
+    void func(Foo f) {
         cout << f.private_attr   << endl;
         cout << f.protected_attr << endl;
         cout << f.public_attr    << endl;
@@ -34,7 +34,7 @@ public:
 int main() {
     Foo f;
     FriendClass fc;
-    fc.friend_func(f);
+    fc.func(f);
 
     return 0;
 }

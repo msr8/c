@@ -1,20 +1,25 @@
-from functools import cache
+a = [8, 1, 3, 11, 15, 7]
+n = 3
 
-@cache
-def foo(n:int) -> int:
-    if n <= 1: return n
-    steps = 0
-    while (1 << steps)<=n: steps += 1
-    return ((1 << steps) - 1) - foo(n - (1 << (steps - 1)))
-        
+[1,3,7,8,11,15]
 
-class Solution:
-    def minimumOneBitOperations(self, n: int) -> int:
-        # Edgecase
-        if n==0: return 0
-        return foo(n)
+a.sort()
+print(a)
+print('')
 
 
+current_difference = float('inf')
+
+for i in range(len(a)-n+1):
+    min_elem = a[i]
+    max_elem = a[i+n-1]
+    diff     = max_elem - min_elem
+    
+    if current_difference > diff:
+        current_difference = diff
+
+print(current_difference)
 
 
-Solution().minimumOneBitOperations(8)
+
+

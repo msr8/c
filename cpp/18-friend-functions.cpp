@@ -26,8 +26,6 @@ void friend_func(Foo f) {
 
 
 
-
-
 int main() {
     Foo f;
     friend_func(f);
