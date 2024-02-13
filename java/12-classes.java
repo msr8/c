@@ -1,7 +1,7 @@
 class Foo {
     private int data;
 
-    public void set(int x) {data = x;}
+    public void set(int x) {this.data = x;}
     public int get() {return data;}
 }
 
