@@ -1,3 +1,5 @@
+import pandas as pd
+
 data = {
     'age':            [10,22,13,21,12,11,17],
     'section':        ['A','B','C','B','B','A','A'],
@@ -18,3 +20,17 @@ data_list = [
 ]
 
 df = pd.DataFrame(data_list[1:], columns=data_list[0])
+print(df.head(3))
+print(df.tail(3))
+print(df.describe())
+print(df.info())
+print(df.shape)
+print(df.columns)
+print(df.index)
+print(df['city'])
+print(df[['city', 'age']])
+print(df[2:5])
+print(df[df['age'] > 15])
+print(df[df['age'] > 15][['city', 'age']])
+print(df.iloc[2:5, 2:4])
+print(df.iloc[2:5, [2, 4]])
