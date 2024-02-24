@@ -19,7 +19,20 @@ data_list = [
     [17,    'A',       'Mumbai',  'F',      'red'           ]
 ]
 
+data_dict = [
+    {'age': 10, 'section': 'A', 'city': 'Gurgaon', 'gender': 'M', 'favorite_color': 'red'},
+    {'age': 22, 'section': 'B', 'city': 'Delhi',   'gender': 'F', 'favorite_color': 'black'},
+    {'age': 13, 'section': 'C', 'city': 'Mumbai',  'gender': 'F', 'favorite_color': 'yellow'},
+    {'age': 21, 'section': 'B', 'city': 'Delhi',   'gender': 'M', 'favorite_color': 'pink'},
+    {'age': 12, 'section': 'B', 'city': 'Mumbai',  'gender': 'M', 'favorite_color': 'black'},
+    {'age': 11, 'section': 'A', 'city': 'Delhi',   'gender': 'M', 'favorite_color': 'green'},
+    {'age': 17, 'section': 'A', 'city': 'Mumbai',  'gender': 'F', 'favorite_color': 'red'}
+]
+
 df = pd.DataFrame(data_list[1:], columns=data_list[0])
+df.to_latex()
+# Convert df to list of dictionaries
+print(df.to_dict(orient='records'))
 print(df.head(3))
 print(df.tail(3))
 print(df.describe())
