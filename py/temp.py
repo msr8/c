@@ -1,19 +1,28 @@
-# Write a program to implement pivot() and pivot-table() on a DataFrame
 import pandas as pd
 
-# Create a DataFrame
 data = {
-    'A': ['foo', 'foo', 'foo', 'foo', 'foo', 'bar', 'bar', 'bar', 'bar'],
-    'B': ['one', 'one', 'one', 'two', 'two', 'one', 'one', 'two', 'two'],
-    'C': ['small', 'large', 'large', 'small', 'small', 'large', 'small', 'small', 'large'],
-    'D': [1, 2, 2, 3, 3, 4, 5, 6, 7]
+    'Day':         ['Monday', 'Monday', 'Tuesday', 'Tuesday', 'Wednesday', 'Wednesday'],
+    'City':        ['Delhi', 'Mumbai', 'Delhi', 'Mumbai', 'Delhi', 'Mumbai'],
+    'Temperature': [32, 34, 33, 35, 34, 36],
 }
 df = pd.DataFrame(data)
+print('Dataframe for pivot(): ')
+display_df(df)
 
-# Implement pivot() on the DataFrame
-pivot = df.pivot(index='A', columns='B', values='D')
-print(pivot)
+pivot_df = df.pivot(index='Day', columns='City', values='Temperature')
+print('\npivot(): ')
+display_df(pivot_df, index=True)
 
-# Implement pivot_table() on the DataFrame
-pivot_table = df.pivot_table(index='A', columns='B', values='D', aggfunc='sum')
-print(pivot_table)
+
+data = {
+    'Day':         ['Monday', 'Monday', 'Monday', 'Tuesday', 'Tuesday', 'Tuesday'],
+    'City':        ['Delhi', 'Delhi', 'Mumbai', 'Delhi', 'Mumbai', 'Mumbai'],
+    'Temperature': [32, 33, 36, 33, 36, 37],
+}
+df = pd.DataFrame(data)
+print('\nDataframe for pivot_table(): ')
+display_df(df)
+
+pivot_table_df = df.pivot_table(index='Day', columns='City', values='Temperature', aggfunc='count')
+print('\npivot_table(): ')
+display_df(pivot_table_df, index=True)
