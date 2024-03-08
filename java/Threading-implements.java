@@ -1,21 +1,19 @@
-
-
-class MyCounter implements Runnable{
+class MyCounter implements Runnable {
     private int start;
     private int end;
 
     public MyCounter(int start, int end) {
         this.start = start;
-        this.end = end;
+        this.end   = end;
     }
 
     public void run() {
         for (int i=start; i<=end; i++) {
             try {Thread.sleep(1000);}
             catch (InterruptedException e) {e.printStackTrace();}
-            System.out.println(i);
+            System.out.println("Thread " + Thread.currentThread().getName() + ": " + i);
         }
-    }
+    } 
 }
 
 
@@ -28,11 +26,12 @@ class Main {
         Thread t1 = new Thread(my_counter_1);
         Thread t2 = new Thread(my_counter_2);
 
+        t1.setName("Alpha");
+        t2.setName("Beta");
+
         t1.start();
         t2.start();
 
-        System.out.println("Main thread finished!");
+        System.out.println("Number of active threads: " + Thread.activeCount());
     }
 }
-
-
