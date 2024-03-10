@@ -18,7 +18,7 @@ def deal_with_code(cell):
     code    = ''.join(cell['source'])
     outputs = cell['outputs']
 
-    ret = f'### CODE\n\n```python\n{code}\n```\n\n<br>\n\n### OUTPUT\n\n<br>\n'
+    ret = f'## CODE\n\n```python\n{code}\n```\n\n<br>\n\n## OUTPUT\n\n<br>\n'
 
     for output in outputs:
         if output['output_type'] == 'stream':
@@ -40,7 +40,7 @@ with open(INP_FILENAME) as f:
     ipynb = json_load(f)
 
 cells = ipynb['cells']
-cells = cells[2:]
+cells = cells[2:-1]
 
 for cell in cells:
     if cell['cell_type'] == 'markdown':

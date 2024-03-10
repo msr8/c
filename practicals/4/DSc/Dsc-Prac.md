@@ -9,7 +9,7 @@
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -45,7 +45,7 @@ display_df(res_df)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -116,7 +116,7 @@ display_df(res_df)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -189,7 +189,7 @@ display_df(df)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -310,7 +310,7 @@ Original data:
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -338,7 +338,7 @@ display_df(median_df, index=True)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -380,7 +380,7 @@ display_df(median_df, index=True)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -414,7 +414,7 @@ display_df(pivot_table_df, index=True)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -462,7 +462,7 @@ display_df(pivot_table_df, index=True)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -479,7 +479,7 @@ display_df(df)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -509,7 +509,7 @@ Mark,19,M
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -530,7 +530,7 @@ display_df(mean_df, index=True)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -559,7 +559,7 @@ display_df(mean_df, index=True)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -580,7 +580,7 @@ display_df(weight_df, index=True)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -608,7 +608,7 @@ display_df(weight_df, index=True)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -628,7 +628,7 @@ display_df(df.T, index=True)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -657,7 +657,7 @@ display_df(df.T, index=True)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -675,7 +675,7 @@ display_df(df)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -696,7 +696,7 @@ display_df(df)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -725,7 +725,7 @@ display_df(s)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -776,7 +776,7 @@ display_df(s)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -795,7 +795,7 @@ display_df(income_per_capita, index=True)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -829,13 +829,13 @@ display_df(income_per_capita, index=True)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q12) Series objects temp1, temp2, temp3, and temp 4 stores the temperature of days of week 1, week 2, week 3, week 4. Write a script to:
+# Q12) Series objects Temp1, Temp2, Temp3, and Temp4 store the temperature of days of week 1, week 2, week 3, week 4. Write a script to:
 1) Print average temperature per week
 2) Print average temperature of entire month
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -857,7 +857,7 @@ print("\n3) Average temperature of the entire month: ", temp_df.values.mean())
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -890,7 +890,7 @@ print("\n3) Average temperature of the entire month: ", temp_df.values.mean())
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -912,7 +912,7 @@ display_df(ret)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -942,7 +942,7 @@ display_df(ret)
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -952,6 +952,7 @@ s2 = pd.Series([4, 0, 3, 7, 4])
 
 print("\n1) Original series':")
 display_df(s1)
+print('\n')
 display_df(s2)
 
 print("\n2) Comparing each element one by one:")
@@ -963,7 +964,7 @@ for i,j in zip(s1, s2):
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -976,6 +977,9 @@ for i,j in zip(s1, s2):
 |   3 |
 |   4 |
 |   5 |
+
+
+
 |   0 |
 |----:|
 |   4 |
@@ -999,7 +1003,7 @@ for i,j in zip(s1, s2):
 
 <br>
 
-### CODE
+## CODE
 
 ```python
 import pandas as pd
@@ -1016,7 +1020,7 @@ display_df(new_s)
 
 <br>
 
-### OUTPUT
+## OUTPUT
 
 <br>
 
@@ -1045,7 +1049,3 @@ display_df(new_s)
 |   3 |
 |   4 |
 |   5 |
-
-
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
