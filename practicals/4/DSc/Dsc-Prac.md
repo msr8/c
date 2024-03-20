@@ -1,6 +1,66 @@
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q1) Given a dataset, print the following:
+# Q1) Write all the ways to create a dataframe
+
+<br>
+
+## CODE
+
+```python
+import pandas as pd
+
+# From a list of lists
+data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+df = pd.DataFrame(data)
+print('From a list of lists:')
+display_df(df)
+
+# From a dictionary
+data = {'a': [1, 4, 7], 'b': [2, 5, 8], 'c': [3, 6, 9]}
+df = pd.DataFrame(data)
+print('\nFrom a dictionary:')
+display_df(df)
+
+# From a list of dictionaries
+data = [{'a': 1, 'b': 2, 'c': 3}, {'a': 4, 'b': 5, 'c': 6}, {'a': 7, 'b': 8, 'c': 9}]
+df = pd.DataFrame(data)
+print('\nFrom a list of dictionaries:')
+display_df(df)
+```
+
+<br>
+
+## OUTPUT
+
+<br>
+From a list of lists:
+
+|   0 |   1 |   2 |
+|----:|----:|----:|
+|   1 |   2 |   3 |
+|   4 |   5 |   6 |
+|   7 |   8 |   9 |
+
+From a dictionary:
+
+|   a |   b |   c |
+|----:|----:|----:|
+|   1 |   2 |   3 |
+|   4 |   5 |   6 |
+|   7 |   8 |   9 |
+
+From a list of dictionaries:
+
+|   a |   b |   c |
+|----:|----:|----:|
+|   1 |   2 |   3 |
+|   4 |   5 |   6 |
+|   7 |   8 |   9 |
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+# Q2) Given a dataset, print the following:
 
 1) Records of index 1 & 3
 2) Records where age >= 15
@@ -93,7 +153,7 @@ display_df(res_df)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q2) Create a dataframe to store data of 10 students, with the columns being "Name", "Age", "Semester I marks out of 600", "Semester II marks out of 500", and "Attendance"
+# Q3) Create a dataframe to store data of 10 students, with the columns being "Name", "Age", "Semester I marks out of 600", "Semester II marks out of 500", and "Attendance"
 
 1) Display details of students who scored more than 560 marks in sem I
 2) Display details of students who scored less than 250 marks in sem II
@@ -306,7 +366,7 @@ Original data:
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q3) Create a DataFrame based on E-Commerce data and generate mean, mode, and median
+# Q4) Create a DataFrame based on E-Commerce data and generate mean, mode, and median
 
 <br>
 
@@ -376,7 +436,7 @@ display_df(median_df, index=True)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q4) Write a program to implement pivot() and pivot-table() on a DataFrame
+# Q5) Write a program to implement pivot() and pivot-table() on a DataFrame
 
 <br>
 
@@ -458,7 +518,7 @@ display_df(pivot_table_df, index=True)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q5) Write a Program to read a CSV file and create its DataFrame
+# Q6) Write a Program to read a CSV file and create its DataFrame
 
 <br>
 
@@ -505,7 +565,7 @@ Mark,19,M
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q6) Consider the DataFrame QtrSales where each row contains the item category, item name and expenditure and group the rows by category, and print the average expenditure per category
+# Q7) Consider the DataFrame QtrSales where each row contains the item category, item name and expenditure and group the rows by category, and print the average expenditure per category
 
 <br>
 
@@ -555,7 +615,7 @@ display_df(mean_df, index=True)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q7) Create a DataFrame having age, name, weight of five students. Write a program to display only the weight of first and fourth rows
+# Q8) Create a DataFrame having age, name, weight of five students. Write a program to display only the weight of first and fourth rows
 
 <br>
 
@@ -604,7 +664,7 @@ display_df(weight_df, index=True)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q8) Write a program to create a DataFrame to store weight, age and name of three people. Print the DataFrame and its transpose
+# Q9) Write a program to create a DataFrame to store weight, age and name of three people. Print the DataFrame and its transpose
 
 <br>
 
@@ -653,7 +713,7 @@ display_df(df.T, index=True)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q9) Create a pandas series from a dictionary of values and an ndarray
+# Q10) Create a pandas series from a dictionary of values and an ndarray
 
 <br>
 
@@ -692,7 +752,7 @@ display_df(df)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q10) Perform sorting on Series data and DataFrames
+# Q11) Perform sorting on Series data and DataFrames
 
 <br>
 
@@ -772,7 +832,7 @@ display_df(s)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q11) Two Series object, Population stores the details of four metro cities of India and another object AvgIncome stores the total average income reported in four years in these cities. Calculate income per capita for each of these metro cities
+# Q12) Two Series object, Population stores the details of four metro cities of India and another object AvgIncome stores the total average income reported in four years in these cities. Calculate income per capita for each of these metro cities
 
 <br>
 
@@ -829,7 +889,7 @@ display_df(income_per_capita, index=True)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q12) Series objects Temp1, Temp2, Temp3, and Temp4 store the temperature of days of week 1, week 2, week 3, week 4. Write a script to:
+# Q13) Series objects Temp1, Temp2, Temp3, and Temp4 store the temperature of days of week 1, week 2, week 3, week 4. Write a script to:
 1) Print average temperature per week
 2) Print average temperature of entire month
 
@@ -886,7 +946,7 @@ print("\n3) Average temperature of the entire month: ", temp_df.values.mean())
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q13) Write a pandas program to convert a series of lists to one series
+# Q14) Write a pandas program to convert a series of lists to one series
 
 <br>
 
@@ -938,7 +998,7 @@ display_df(ret)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q14) Write a pandas program to compare elements of two series
+# Q15) Write a pandas program to compare elements of two series
 
 <br>
 
@@ -999,7 +1059,7 @@ for i,j in zip(s1, s2):
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# Q15) Write a pandas program to create a subset of a given series based on values and condition
+# Q16) Write a pandas program to create a subset of a given series based on values and condition
 
 <br>
 
@@ -1049,3 +1109,302 @@ display_df(new_s)
 |   3 |
 |   4 |
 |   5 |
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+Q17) Given the dataset Toyota.csv, do the following operations: 	
+
+1. Upload Toyota.csv in dataframe df.
+2. What is the data type of MetColor?
+3. How many null values are there in the KM field?
+4. Which column has 7 unique values?
+5. How many records are there? What is the mean and median of age grouped by FuelType?
+6. Replace three, four, five value in Doors column to 3,4,5 respectively
+7. Change the datatype of Doors to int64
+8. Impute the value of Price with median
+9. Replace "????" in HP field with mean
+10. Impute blank values in FuelType with Mode.
+11. Delete the rows with MetColor and Age as blank
+12. Replace “??” value in KM with Mean
+13. What is the mean, median and mode of the KM field?
+14. Create a new column “Category” based on the value of the column “Age” according to the following table:
+
+| Value | Category |
+| :---: | :------: |
+| 0-10  | Old      |
+| 11-20 | Medium   |
+| 20+   | New      |
+
+15. Create Dummy fields for the FuelType column
+
+
+
+<br>
+
+## CODE
+
+```python
+import pandas as pd
+
+
+# 1) Upload Toyota.csv in dataframe df
+df = pd.read_csv('Toyota.csv')
+
+# 2) What is the data type of MetColor?
+metcolor_dtype = df['MetColor'].dtype
+print(f'\n2) Datatype of the MetColor column is ', metcolor_dtype)
+
+# 3) How many null value are there in KM field?
+num_null = df['KM'].isnull().sum()
+print(f'\n3) The KM column has {num_null} null values')
+
+# 4) Which column has 7 unique values?
+for col in df.columns:
+    if df[col].nunique() == 7:
+        print(f'\n4) The {col} column has 7 unique values')
+else:
+    print('\n4) No column with 7 unique values')
+
+# 5) How many records are there?
+print(f'\n5) There are a total of {len(df)} records')
+
+# 6) Replace three, four, five value in Doors column to 3,4,5 respectively.
+replace_dict = {'three': 3, 'four': 4, 'five': 5}
+df['Doors'] = df['Doors'].replace(replace_dict)
+
+# 7) Change the datatype of Doors to int64
+df['Doors'] = df['Doors'].astype('int64')
+
+# 8) Impute the value of Price with median
+median_price = df['Price'].median()
+df['Price']  = df['Price'].fillna(median_price)
+
+# 9) Replace "????"" in HP field with mean
+temp     = df['HP']
+temp     = temp[temp != '????']
+temp     = temp.astype('int64')
+mean_hp  = temp.mean()
+df['HP'] = df['HP'].replace('????', mean_hp)
+
+# 10) Impute blank values in FuelType with Mode
+mode_fueltype  = df['FuelType'].mode()[0]
+df['FuelType'] = df['FuelType'].fillna(mode_fueltype)
+
+# 11) Delete the rows with MetColor and Age as blank
+df.dropna(subset=['MetColor', 'Age'], inplace=True)
+
+# 12) Replace ?? value in KM with Mean
+temp     = df['KM']
+temp     = temp[temp != '??']
+temp     = temp.astype('int64')
+mean_km  = temp.mean()
+df['KM'] = df['KM'].replace('??', mean_km)
+
+# 13) What is the mean, median and mode of KM field
+km = df['KM'].astype('int64')
+print(f'\n13.1) Mean of KM:   {mean_km}')
+print(f'13.2) Median of KM: {km.median()}')
+print(f'13.3) Mode of KM:   {km.mode()[0]}')
+
+# 14) Create a new column "Category" based on the value of the column "Age"
+def func(val):
+    if   val <= 10: return 'New'
+    elif val <= 20: return 'Medium'
+    else:           return 'Old'
+df['Category'] = df['Age'].apply(func)
+
+# 15) Create Dummy fields for FuelType
+df = pd.get_dummies(df, columns=['FuelType'])
+```
+
+<br>
+
+## OUTPUT
+
+<br>
+
+2) Datatype of the MetColor column is  float64
+
+3) The KM column has 0 null values
+
+4) The Doors column has 7 unique values
+
+4) No column with 7 unique values
+
+5) There are a total of 1436 records
+
+13.1) Mean of KM:   69006.62001696353
+13.2) Median of KM: 63875.5
+13.3) Mode of KM:   69006
+
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+# Q18) Write a pandas program to change the order of index of a given series
+
+<br>
+
+## CODE
+
+```python
+s = pd.Series(data = [1, 2, 3, 4, 5], index = ['A', 'B', 'C', 'D', 'E'])
+print("Original series:")
+display_df(s, index=True)
+
+s = s.reindex(index = ['B', 'A', 'C', 'D', 'E'])
+print("\nSeries after changing the order of index:")
+display_df(s, index=True)
+```
+
+<br>
+
+## OUTPUT
+
+<br>
+Original series:
+
+|    |   0 |
+|:---|----:|
+| A  |   1 |
+| B  |   2 |
+| C  |   3 |
+| D  |   4 |
+| E  |   5 |
+
+Series after changing the order of index:
+
+|    |   0 |
+|:---|----:|
+| B  |   2 |
+| A  |   1 |
+| C  |   3 |
+| D  |   4 |
+| E  |   5 |
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+# Q19) Write a pandas program to get the items of a given series not present in another given series
+
+<br>
+
+## CODE
+
+```python
+import pandas as pd
+
+s1 = pd.Series([1, 2, 3, 4, 5])
+s2 = pd.Series([1, 20, 30, 4, 50])
+
+print("S1:")
+display_df(s1)
+print("\nS2:")
+display_df(s2)
+
+print("\nItems of s1 not present in s2:")
+ans = s1[~s1.isin(s2)]
+display_df(ans)
+```
+
+<br>
+
+## OUTPUT
+
+<br>
+S1:
+
+|   0 |
+|----:|
+|   1 |
+|   2 |
+|   3 |
+|   4 |
+|   5 |
+
+S2:
+
+|   0 |
+|----:|
+|   1 |
+|  20 |
+|  30 |
+|   4 |
+|  50 |
+
+Items of s1 not present in s2:
+
+|   0 |
+|----:|
+|   2 |
+|   3 |
+|   5 |
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+# Q20) Write a pandas program to calculate the frequency counts of each unique value of a given series
+
+<br>
+
+## CODE
+
+```python
+import pandas as pd
+s = pd.Series([1,1,2,2,2,3,4,4,4,4,4,5,5,5,5,5])
+print("Original Series:")
+display_df(s)
+
+print("\nFrequency of each unique value:")
+freq = s.value_counts()
+display_df(freq, index=True)
+```
+
+<br>
+
+## OUTPUT
+
+<br>
+Original Series:
+
+|   0 |
+|----:|
+|   1 |
+|   1 |
+|   2 |
+|   2 |
+|   2 |
+|   3 |
+|   4 |
+|   4 |
+|   4 |
+|   4 |
+|   4 |
+|   5 |
+|   5 |
+|   5 |
+|   5 |
+|   5 |
+
+Frequency of each unique value:
+
+|    |   count |
+|---:|--------:|
+|  4 |       5 |
+|  5 |       5 |
+|  2 |       3 |
+|  1 |       2 |
+|  3 |       1 |
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
