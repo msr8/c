@@ -1400,6 +1400,147 @@ Frequency of each unique value:
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
+# Q21) Create a Series and print all the elements that are above 75th percentile
+
+<br>
+
+## CODE
+
+```python
+import pandas as pd
+
+s      = pd.Series([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+per_75 = s.quantile(0.75)
+ans    = s[s > per_75]
+print(ans)
+```
+
+<br>
+
+## OUTPUT
+
+<br>
+7     8
+8     9
+9    10
+dtype: int64
+
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+# Q22) Write a program to find the MAD (mean absolute deviation) of all columns in a dataframe
+
+<br>
+
+## CODE
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    'A': [1, 2, 3, 4, 5],
+    'B': [6, 7, 8, 9, 100]
+})
+
+ans = pd.Series()
+for col in df:
+    mean  = df[col].mean()
+    diffs = df[col] - mean
+    diffs = diffs.abs()
+    mad   = diffs.mean()
+    ans[col] = mad
+
+print('Original dataframe:')
+display_df(df)
+print('\nMADs: ')
+display_df(ans, index=True)
+```
+
+<br>
+
+## OUTPUT
+
+<br>
+Original dataframe:
+
+|   A |   B |
+|----:|----:|
+|   1 |   6 |
+|   2 |   7 |
+|   3 |   8 |
+|   4 |   9 |
+|   5 | 100 |
+
+MADs: 
+
+|    |    0 |
+|:---|-----:|
+| A  |  1.2 |
+| B  | 29.6 |
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+# Q23) Create a dataframe based on employee data and generate quartile and variance
+
+<br>
+
+## CODE
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    'Name':   ['A', 'B', 'C', 'D', 'E'],
+    'Salary': [1000, 2000, 3000, 4000, 5000],
+    'Age':    [20, 30, 40, 50, 60]
+})
+
+quartiles = df.quantile([0.25, 0.5, 0.75], numeric_only=True)
+variances = df.var(numeric_only=True)
+
+print('Original dataframe:')
+display_df(df)
+print('\nQuartiles:')
+display_df(quartiles, index=True)
+print('\nVariances:')
+display_df(variances, index=True)
+```
+
+<br>
+
+## OUTPUT
+
+<br>
+Original dataframe:
+
+| Name   |   Salary |   Age |
+|:-------|---------:|------:|
+| A      |     1000 |    20 |
+| B      |     2000 |    30 |
+| C      |     3000 |    40 |
+| D      |     4000 |    50 |
+| E      |     5000 |    60 |
+
+Quartiles:
+
+|      |   Salary |   Age |
+|-----:|---------:|------:|
+| 0.25 |     2000 |    30 |
+| 0.5  |     3000 |    40 |
+| 0.75 |     4000 |    50 |
+
+Variances:
+
+|        |         0 |
+|:-------|----------:|
+| Salary |   2.5e+06 |
+| Age    | 250       |
+
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
