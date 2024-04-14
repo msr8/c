@@ -17,6 +17,12 @@ class Main {
             for (int j = 0; j < arr2[i].length; j++) {
                 System.out.println(arr2[i][j]);
             }
+        }
+        // OR
+        for (int[] i : arr2) {
+            for (int j : i) {
+                System.out.println(j);
+            }
         }        
     }
 }

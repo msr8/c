@@ -7,11 +7,11 @@ class Main {
         String  e = "Hello World"; // String
         boolean f = true; // Boolean
 
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(d);
-        System.out.println(e);
-        System.out.println(f);
+        System.out.println(a); // 5
+        System.out.println(b); // 5.5
+        System.out.println(c); // 5.5
+        System.out.println(d); // a
+        System.out.println(e); // Hello World
+        System.out.println(f); // true
     }
 }
