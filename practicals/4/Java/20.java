@@ -1,4 +1,4 @@
-// WAP to input salary of a person along with his name, if the salary is less than 85,000 then throw an arithmetic exception with a proper message “not eligible for loan”
+// WAP to input salary of a person along with his name, if the salary is less than 85,000 then throw an arithmetic exception with a proper message "not eligible for loan"
 import java.util.Scanner;
 
 class Main {

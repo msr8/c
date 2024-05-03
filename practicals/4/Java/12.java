@@ -22,6 +22,7 @@ class F extends D {
     void printF() {System.out.println("F");}
 }
 
+
 class Main {
     public static void main(String[] args) {
         C obj1 = new C();

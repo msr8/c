@@ -11,9 +11,9 @@ class Main {
             System.out.print(i + " ");
         }
         
-        for (int i = 0; i < arr.length; i++) {
-            if (i == 0 || arr[i] != arr[i-1]) {
-                unique.add(arr[i]);
+        for (int i : arr) {
+            if (!unique.contains(i)) {
+                unique.add(i);
             }
         }
 

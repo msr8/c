@@ -8,6 +8,7 @@ class Main {
         ArrayList<String> lines = new ArrayList<String>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        System.out.println("Please enter the lines. Type 'STOP' to stop:\n");
         try {
             while (true) {
                 line = br.readLine();

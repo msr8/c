@@ -18,22 +18,27 @@ class Main {
         label.setOpaque(true);
         label.setBackground(new Color(0, 0, 0));
         label.setPreferredSize(new Dimension(300, 100));
+        label.setHorizontalAlignment(JLabel.CENTER);
+        label.setVerticalAlignment(JLabel.CENTER);
 
         red.addAdjustmentListener(new AdjustmentListener() {
             public void adjustmentValueChanged(AdjustmentEvent e) {
                 label.setBackground(new Color(red.getValue(), green.getValue(), blue.getValue()));
+                label.setText("rgb(" + red.getValue() + ", " + green.getValue() + ", " + blue.getValue() + ")");
             }
         });
 
         green.addAdjustmentListener(new AdjustmentListener() {
             public void adjustmentValueChanged(AdjustmentEvent e) {
                 label.setBackground(new Color(red.getValue(), green.getValue(), blue.getValue()));
+                label.setText("rgb(" + red.getValue() + ", " + green.getValue() + ", " + blue.getValue() + ")");
             }
         });
 
         blue.addAdjustmentListener(new AdjustmentListener() {
             public void adjustmentValueChanged(AdjustmentEvent e) {
                 label.setBackground(new Color(red.getValue(), green.getValue(), blue.getValue()));
+                label.setText("rgb(" + red.getValue() + ", " + green.getValue() + ", " + blue.getValue() + ")");
             }
         });
 

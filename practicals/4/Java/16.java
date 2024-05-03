@@ -9,6 +9,7 @@ interface Interface2 {
     void print2();
 }
 
+
 class Main implements Interface1, Interface2 {
     @Override
     public void print1() {

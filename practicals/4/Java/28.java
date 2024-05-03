@@ -12,6 +12,7 @@ class Main {
                 i = fis.read();
                 if (i == -1) {break;}
                 fos.write(i);
+                System.out.print( (char)i );
             }
             
             fis.close();
