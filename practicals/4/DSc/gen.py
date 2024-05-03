@@ -16,6 +16,7 @@ def deal_with_markdown(cell):
 
 def deal_with_code(cell):
     code    = ''.join(cell['source'])
+    code    = code.replace(', index=True','').replace('display_df()','display_df').replace('display_df','print')
     outputs = cell['outputs']
 
     ret = f'## CODE\n\n```python\n{code}\n```\n\n<br>\n\n## OUTPUT\n\n<br>\n'
