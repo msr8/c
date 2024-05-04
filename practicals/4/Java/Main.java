@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Main extends JFrame {
+class Main extends JFrame {
     private JPanel panel = new JPanel(new GridBagLayout());
 
     public Main() {

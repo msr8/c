@@ -25,9 +25,18 @@ def deal_with_code(cell):
         if output['output_type'] == 'stream':
             out = ''.join(output['text'])
             ret += f'{out}\n'
+        
         elif output['output_type'] == 'display_data':
-            mds = output['data']['text/markdown']
-            ret += ''.join(mds) + '\n'
+            # If it is markdown
+            if output['data'].get('text/markdown'):
+                mds  = output['data']['text/markdown']
+                ret += ''.join(mds) + '\n'
+            # Else if its a png (seaborn plot)
+            elif output['data'].get('image/png'):
+                img  = output['data']['image/png']
+                ret += f'<center>\n\n<img src="data:image/png;base64,{img}">\n\n</center>\n\n'
+            else:
+                raise ValueError(f'Unknown output type: {output["output_type"]}')
     
     return ret
 
@@ -55,8 +64,8 @@ for cell in cells:
 
 
 
-with open(OUT_FILENAME, 'w') as f:
-    f.write(ret)
+# with open(OUT_FILENAME, 'w') as f:
+#     f.write(ret)
 pyperclip_copy(ret)
     
 

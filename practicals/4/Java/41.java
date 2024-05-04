@@ -5,7 +5,6 @@ import java.awt.*;
 
 class Main {
     public static void main(String[] args) {
-        // Just print the whole database
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/database", "root", "password");
