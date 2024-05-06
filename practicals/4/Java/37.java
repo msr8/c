@@ -10,9 +10,9 @@ class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new GridLayout(4, 1));
 
-        JScrollBar red = new JScrollBar(JScrollBar.HORIZONTAL, 0, 1, 0, 255);
+        JScrollBar red   = new JScrollBar(JScrollBar.HORIZONTAL, 0, 1, 0, 255);
         JScrollBar green = new JScrollBar(JScrollBar.HORIZONTAL, 0, 1, 0, 255);
-        JScrollBar blue = new JScrollBar(JScrollBar.HORIZONTAL, 0, 1, 0, 255);
+        JScrollBar blue  = new JScrollBar(JScrollBar.HORIZONTAL, 0, 1, 0, 255);
 
         JLabel label = new JLabel();
         label.setOpaque(true);

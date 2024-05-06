@@ -16,8 +16,9 @@ class Main {
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setLayout(new GridLayout(5, 1));
 
+            JLabel label;
             while (resultSet.next()) {
-                JLabel label = new JLabel(resultSet.getString("name") + " " + resultSet.getString("age"));
+                label = new JLabel(resultSet.getString("name") + " " + resultSet.getString("age"));
                 label.setHorizontalAlignment(JLabel.CENTER);
                 label.setVerticalAlignment(JLabel.CENTER);
                 frame.add(label);

@@ -30,19 +30,19 @@ class Main {
             Student student = new Student(198719342, "Ajay", 78.92, "9870081734");
 
             // Write student data to file
-            FileOutputStream fileOutputStream = new FileOutputStream(filename);
-            BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(bufferedOutputStream);
-            objectOutputStream.writeObject(student);
-            objectOutputStream.close();
+            FileOutputStream     file_out = new FileOutputStream(filename);
+            BufferedOutputStream buff_out = new BufferedOutputStream(file_out);
+            ObjectOutputStream   obj_out  = new ObjectOutputStream(buff_out);
+            obj_out.writeObject(student);
+            obj_out.close();
 
             // Read student data from file
-            FileInputStream fileInputStream = new FileInputStream(filename);
-            BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
-            ObjectInputStream objectInputStream = new ObjectInputStream(bufferedInputStream);
-            Student studentRead = (Student) objectInputStream.readObject();
-            objectInputStream.close();
-
+            FileInputStream     file_inp = new FileInputStream(filename);
+            BufferedInputStream buff_inp = new BufferedInputStream(file_inp);
+            ObjectInputStream   obj_inp  = new ObjectInputStream(buff_inp);
+            Student studentRead = (Student) obj_inp.readObject();
+            obj_inp.close();
+            
             studentRead.display();
         }
         
